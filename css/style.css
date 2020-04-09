@@ -111,8 +111,57 @@ section {
   text-align: center;
   padding-top: 3vw;
   color: #f27600;
+  font-size: 1.2rem;
 }
-
+#why_section {
+  height: 80vh;
+}
+#why_block {
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr 2fr;
+}
+#text_block {
+  padding-top: 15vh;
+  padding-right: 3vh;
+  color: #f27600;
+}
+#why_title {
+  font-size: 2.5rem;
+}
+#why_desc {
+  font-size: 1.2rem;
+  padding-top: 1vw;
+}
+#why_img {
+  width: 35vw;
+}
+#footer_svg {
+  position: absolute;
+  fill: #f27600;
+}
+.footer_icon {
+  width: 1.5vw;
+}
+#contact {
+  padding-top: 5vw;
+  padding-left: 3vw;
+  position: absolute;
+  width: 40vw;
+  color: white;
+  z-index: 1;
+  display: grid;
+  font-size: 2rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.icon_box {
+  width: 2vw;
+}
+.contact_info {
+  display: grid;
+  grid-template-columns: 0.15fr 2fr;
+  font-size: 1.5rem;
+  padding-top: 1vw;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
