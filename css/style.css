@@ -80,7 +80,10 @@ body {
 }
 #fill-1 {
   width: 100%;
+  position: absolute;
   background-color: white;
+  bottom: 0;
+  color: white;
 }
 
 #intro-text {

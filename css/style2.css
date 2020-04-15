@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#navigation-pane {
+  height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(34, 42, 183, 0.27),
+    rgba(0, 183, 230, 0.7)
+  );
+  position: relative;
+}
+.oval {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  fill: white;
+}
