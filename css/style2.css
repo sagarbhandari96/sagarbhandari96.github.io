@@ -10,7 +10,7 @@ body {
 }
 
 #navigation-pane {
-  height: 30vh;
+  height: 25vh;
   width: 100%;
   background-image: linear-gradient(
     to bottom right,
@@ -24,4 +24,44 @@ body {
   bottom: 0;
   width: 100%;
   fill: white;
+}
+#nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 4fr 1fr 1fr;
+}
+#nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  white-space: nowrap;
+  padding-top: 10vh;
+}
+#logo {
+  padding-top: 5vh;
+}
+#nav-buttons {
+  padding-top: 9vh;
+}
+.register {
+  background-color: orangered;
+
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  color: white;
+}
+#login-form {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+}
+#login-form-box {
+  margin-top: 10vh;
+  border: 2px solid #ff7c00;
+  padding: 3vh 3vh;
+  border-radius: 30px;
+}
+#login-icon {
+  text-align: center;
+}
+#login-svg {
+  height: 10vw;
+  width: 10vw;
 }
