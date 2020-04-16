@@ -65,3 +65,68 @@ body {
   height: 10vw;
   width: 10vw;
 }
+#login-text {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 2rem;
+  color: #ff7c00;
+}
+#input-fields {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding-top: 2rem;
+}
+
+#user-field {
+  margin-bottom: 1.1rem;
+}
+.form-input {
+  font-size: 1.1rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.28);
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+}
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.28);
+  border-bottom: 3px solid #ff7c00;
+  transition: 0.2s;
+}
+.form-input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+.form-label {
+  padding-left: 1.3rem;
+  padding-top: 0.5rem;
+  font-weight: 700;
+  display: block;
+  color: #ff7c00;
+  transition: all 0.3s;
+}
+
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+#forgot-pass {
+  text-align: right;
+  color: #ff7c00;
+  text-decoration: underline;
+}
+#log-in-block {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding-top: 2rem;
+}
+.log-in-button {
+  background-color: orangered;
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  color: white;
+}
