@@ -10,7 +10,7 @@ body {
 }
 
 #navigation-pane {
-  height: 25vh;
+  height: 23vh;
   width: 100%;
   background-image: linear-gradient(
     to bottom right,
@@ -21,10 +21,10 @@ body {
 }
 #login-form {
   display: grid;
-  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-columns: 4.2fr 3.6fr 4.2fr;
 }
 #login-form-box {
-  margin-top: 10vh;
+  margin-top: 2vh;
   margin-bottom: 10vh;
   border: 2px solid #ff7c00;
   padding: 3vh 3vh;
@@ -34,32 +34,34 @@ body {
   text-align: center;
 }
 #login-svg {
-  height: 10vw;
-  width: 10vw;
+  padding-top: 3vh;
+  height: 5vw;
+  width: 5vw;
 }
 #login-text {
   text-align: center;
   padding-top: 15px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ff7c00;
 }
 #input-fields {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 0.3fr 3.4fr 0.3fr;
   padding-top: 2rem;
 }
 
 #user-field {
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
 }
 .form-input {
-  font-size: 1.1rem;
-  padding: 1.1rem 1.3rem;
+  font-size: 1rem;
+  padding: 1rem 0rem 1rem 1.5rem;
+
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.28);
   border-bottom: 3px solid transparent;
-  width: 100%;
+  width: 95%;
   display: block;
 }
 .form-input:focus {
@@ -74,7 +76,7 @@ body {
 .form-label {
   padding-left: 1.3rem;
   padding-top: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
   display: block;
   color: #ff7c00;
   transition: all 0.3s;
@@ -92,7 +94,7 @@ body {
 }
 #log-in-block {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
   padding-top: 2rem;
 }
 .log-in-button {

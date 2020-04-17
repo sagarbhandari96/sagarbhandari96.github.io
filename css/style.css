@@ -28,6 +28,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   white-space: nowrap;
+  cursor: pointer;
 }
 #nav-buttons {
   display: grid;
@@ -64,6 +65,7 @@ body {
   padding: 12px 20px 12px 20px;
   border-radius: 20px;
   color: white;
+  cursor: pointer;
 }
 #log-in {
   background-color: rgba(255, 255, 255, 0);
@@ -71,6 +73,7 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   color: white;
+  cursor: pointer;
 }
 .oval {
   position: absolute;
@@ -125,30 +128,30 @@ body {
 }
 #services-desc {
   text-align: center;
-  color: #ff7c00;
+  color: #8b8a8a;
   padding-top: 2vh;
   font-size: 1.3rem;
 }
 #service-cards {
   display: grid;
   grid-template-columns: 1.5fr 3fr 3fr 3fr 1fr;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #cards {
   border-radius: 50px;
   padding: 2vw;
-  padding-top: 1vw;
+  padding-top: 3vw;
   margin-top: 10vh;
-  height: 250px;
+  height: 15vw;
   width: 15vw;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.28);
   border: 1px solid #70707023;
   text-align: center;
 }
 .service-icons {
-  height: 10vw;
-  width: 10vw;
+  height: 5vw;
+  width: 5vw;
 }
 .service-tag {
   font-weight: 600;
@@ -156,8 +159,11 @@ body {
   padding-top: 10px;
   color: #ff7c00;
 }
+#services-desc {
+  color: #8b8a8a;
+}
 .service-desc {
-  color: #ff7c00;
+  color: #8b8a8a;
   padding-top: 10px;
 }
 
@@ -172,7 +178,7 @@ body {
   padding-top: 4vh;
 }
 #why-desc {
-  color: #ff7c00;
+  color: #8b8a8a;
   padding-top: 2vh;
   font-size: 1.3rem;
 }
