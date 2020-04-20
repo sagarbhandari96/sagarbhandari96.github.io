@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Training Portal</title>
+    <title>Log In</title>
     <link
       rel="icon"
       href="img/favicon.svg"
@@ -14,14 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
   </head>
   <body>
-    <section id="introduction">
+    <div id="navigation-pane">
       <div id="nav-bar">
         <div></div>
         <div id="logo">
@@ -54,89 +51,61 @@
         <div></div>
       </div>
 
-      <div id="intro-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Delectus eveniet a non eius earum quod?
-      </div>
-
       <svg
-        class="oval curve"
+        class="oval"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1920 100"
+        viewBox="0 0 1920 60"
       >
         <path
           d="M1920,58.8v123.9H0V58.3C558.6-29.9,1562.1-8.4,1920,58.8z"
         ></path>
       </svg>
-    </section>
-    <section id="learn-more">
-      <div id="register-account">
-        <a href="/sign_up.html">
-          <button type="button" class="register new-register">
-            Register New Account
-          </button></a
-        >
-      </div>
-      <p id="learn-text">Learn more</p>
-      <div id="arrows">
-        <img src="img/down arrow.gif" width="20px" height="20px" alt="" />
-      </div>
-    </section>
-    <section id="services">
-      <p id="services-title">What do we do?</p>
-      <p id="services-desc">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, quia
-        incidunt! <br />
-        Pariatur facere hic incidunt possimus eligendi! Perferendis, voluptate
-        iusto!
-      </p>
-      <div id="service-cards">
-        <div></div>
-        <div id="cards">
-          <img src="img/icons/cv upload.svg" class="service-icons" alt="" />
-          <p class="service-tag">Lorem ipsum</p>
-          <p class="service-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perspiciatis, reiciendis.
-          </p>
-        </div>
-        <div id="cards">
-          <img src="img/icons/tel_interview.svg" class="service-icons" alt="" />
-          <p class="service-tag">Lorem ipsum</p>
-          <p class="service-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perspiciatis, reiciendis.
-          </p>
-        </div>
-        <div id="cards">
-          <img src="img/icons/location.svg" class="service-icons" alt="" />
-          <p class="service-tag">Lorem ipsum</p>
-          <p class="service-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perspiciatis, reiciendis.
-          </p>
-        </div>
-        <div></div>
-      </div>
-    </section>
-    <div id="why-section">
-      <div></div>
-      <div id="text-block">
-        <p id="why-title">Why us?</p>
-        <p id="why-desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia
-          beatae architecto commodi animi magni, assumenda enim cum libero,
-          quibusdam similique facilis repellat accusantium quam inventore vitae.
-          Fuga consequatur iste commodi, accusantium ducimus perferendis, magni
-          quia ab beatae placeat blanditiis.
-        </p>
-      </div>
-      <div>
-        <img src="img/question.svg" id="why-img" />
-      </div>
-      <div></div>
     </div>
+    <section id="login-form">
+      <div></div>
+      <div id="form-box">
+        <div id="form-icon">
+          <img src="img/icons/sign_in.svg" id="form-icon-svg" alt="" />
+        </div>
+        <div id="form-title">Sign In</div>
+        <div id="input-fields">
+          <div></div>
+          <div id="input-fields-center">
+            <div class="form-group" id="user-field">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Username"
+                id="username"
+                required
+              />
+              <label for="username" class="form-label">Username</label>
+            </div>
 
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-input"
+                placeholder="Password"
+                id="password"
+                required
+              />
+              <label for="password" class="form-label">Password</label>
+            </div>
+            <p id="forgot-pass">Forgot Password?</p>
+            <div id="log-in-block">
+              <div></div>
+              <div>
+                <button type="button" class="log-in-button">Log In</button>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div></div>
+    </section>
     <div id="footer">
       <div>
         <svg

@@ -1,0 +1,38 @@
+#signup-form {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+}
+#form-title {
+  padding-bottom: 1rem;
+}
+
+.input-fields {
+  display: grid;
+  grid-template-columns: 0.5fr 3.25fr 0.5fr 3.25fr 0.5fr;
+  padding-top: 2rem;
+}
+
+.input-field-row {
+  display: grid;
+  grid-template-columns: 0.5fr 7fr 0.5fr;
+  padding-top: 2rem;
+}
+#reason-for-joining {
+  font: inherit;
+}
+
+#register-button-area {
+  display: grid;
+  grid-template-columns: 0.5fr 7fr 0.5fr;
+  padding-top: 2rem;
+}
+#btn-center {
+  text-align: center;
+}
+.sign-up-button {
+  background-color: orangered;
+  width: 50%;
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  color: white;
+}
