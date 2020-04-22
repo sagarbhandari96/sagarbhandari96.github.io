@@ -77,9 +77,9 @@
           </button></a
         >
       </div>
-      <p id="learn-text">Learn more</p>
+      <div id="learn-text">Learn more</div></a>
       <div id="arrows">
-        <img src="img/down arrow.gif" width="20px" height="20px" alt="" />
+        <a href="#services"><img src="img/down arrow.gif" width="20px" height="20px" alt="" /></a>
       </div>
     </section>
     <section id="services">
@@ -180,5 +180,32 @@
         </div>
       </div>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+       // Add smooth scrolling
+       $("a").on("click", function(e) {
+        // Check for a hash value
+        if (this.hash !== "") {
+          // Prevent default behavior
+          e.preventDefault();
+
+          // Store hash
+          const hash = this.hash;
+
+          // Animate smooth scroll
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            300,
+            function() {
+              // Add hash to URL after scroll
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
   </body>
 </html>

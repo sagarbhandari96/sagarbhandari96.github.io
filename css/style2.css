@@ -54,6 +54,7 @@ body {
   margin-bottom: 1rem;
 }
 .form-input {
+  font: inherit;
   font-size: 1rem;
   padding: 1rem 0rem 1rem 1.5rem;
 
@@ -103,4 +104,5 @@ body {
   padding: 12px 20px 12px 20px;
   border-radius: 20px;
   color: white;
+  cursor: pointer;
 }

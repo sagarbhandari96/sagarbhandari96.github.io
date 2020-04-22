@@ -11,7 +11,10 @@
   grid-template-columns: 0.5fr 3.25fr 0.5fr 3.25fr 0.5fr;
   padding-top: 2rem;
 }
-
+#user-gender {
+  width: 110%;
+  color: rgb(110, 110, 110);
+}
 .input-field-row {
   display: grid;
   grid-template-columns: 0.5fr 7fr 0.5fr;
