@@ -1,0 +1,19 @@
+#nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr 2fr 2fr;
+}
+#user-nav-item {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+}
+#user-name-text {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.2rem;
+}
+#nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#user-drop-down {
+  padding-top: 0.3rem;
+}
