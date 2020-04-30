@@ -27,7 +27,7 @@
   </head>
   <body>
     <header id="home-section">
-      <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark " id="main-nav">
         <div class="container">
           <a href="index.html" class="navbar-brand">
             <img
@@ -287,6 +287,11 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+      var toggleClick=0;
+      $(".navbar-toggler").click(function(){
+        $("nav").toggleClass("navbar-dropdown");
+     
+      });
         //Get the current year for the copyright
         $("#year").text(new Date().getFullYear());
       // Add smooth scrolling
