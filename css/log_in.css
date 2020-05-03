@@ -14,11 +14,9 @@
   fill: white;
 }
 
-.navbar-nav button {
-  border: none;
-}
-.btn-register {
+#btn-register {
   padding: 10px 20px;
+  border: none;
 }
 #form-card {
   margin-top: 5vh;
@@ -38,23 +36,24 @@
 }
 #form-section .form-group {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
 }
 #form-section .form-control {
-  width: 90%;
+  width: 100%;
   border-radius: 15px;
 }
 
 #form-section label {
-  padding-left: 1.75rem;
+  padding-left: 0.75rem;
 }
-#email-field {
-  padding-bottom: 0.7rem;
+#input-field {
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
 }
 .form-label {
   padding-left: 1.3rem;
   padding-top: 0.5rem;
-  font-weight: 600;
+  font-weight: 300;
   display: block;
   color: #ff7c00;
   transition: all 0.3s;
@@ -65,5 +64,13 @@
   transform: translateY(-3rem);
 }
 #log-in-btn {
-  width: 30%;
+  width: 50%;
+}
+#forgot-password {
+  font-size: 0.9rem;
+  margin-top: -1.375rem;
+  padding-right: 1.75rem;
+  font-weight: 600;
+  color: #ff7c00;
+  cursor: pointer;
 }

@@ -56,7 +56,8 @@
                 <a href="#contact-us" class="nav-link">Contact Us</a>
               </li>
               <li class="nav-item px-4">
-                <button class="btn btn-register">REGISTER</button>
+                <a href="sign_up.html">
+                <button class="btn btn-register" id="btn-register">REGISTER</button></a>
               </li>
             </ul>
           </div>
@@ -89,7 +90,7 @@
               <h3 class="card-title">Log In</h3>
 
               <form class="form-inline" action="">
-                <div class="form-group text-left" id="email-field">
+                <div class="form-group text-left" id="input-field">
                   <input
                     type="email"
                     class="form-control mx-auto"
@@ -110,14 +111,20 @@
                   <label for="password" class="form-label text-left"
                     >Password</label
                   >
+                  
                 </div>
+                
               </form>
-
-              <a class="" href=""
+              <a href="#">
+              <p class="text-right" id="forgot-password">Forgot password</p></a>
+              <a class="" href="#"
                 ><button class="btn btn-register" id="log-in-btn">
                   Log In
                 </button></a
               >
+             
+
+             
             </div>
           </div>
         </div>
@@ -191,6 +198,10 @@
           </div>
         </footer>
 
+        <script>
+          //Get the current year for the copyright
+$("#year").text(new Date().getFullYear());
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
