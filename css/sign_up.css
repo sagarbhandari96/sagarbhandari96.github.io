@@ -42,7 +42,7 @@
   border: 1px solid grey;
   width: 15rem;
   height: 5rem;
-  transform: translateY(-1rem);
+  margin-bottom: 1rem;
 }
 #terms-cdns {
   transform: translateY(-1rem);
