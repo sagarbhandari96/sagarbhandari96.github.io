@@ -21,7 +21,7 @@
 #form-card {
   margin-top: 5vh;
 }
-.card {
+#form-card .card {
   border: 2px solid #ff7c00;
 }
 #form-section .card-body {

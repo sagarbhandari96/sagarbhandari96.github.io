@@ -99,7 +99,7 @@ body {
 
   font-size: 1.3rem;
 }
-.card {
+#services .card {
   width: 75%;
   /* height: 250px; */
   border-radius: 50px;

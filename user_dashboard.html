@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/log_in.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <title>User Dashboard</title>
+  </head>
+  <body>
+    <div id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="img/logo.svg"
+              alt="Little Buddy Logo"
+              width="170px"
+              height="81px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item px-4">
+                <img
+                  src="img/icons/notif.svg"
+                  height="30px"
+                  width="30px"
+                  alt="notification icon"
+                />
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  User Name
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Account settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <svg
+        class="curve"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1920 60"
+      >
+        <path
+          d="M1920,58.8v123.9H0V58.3C558.6-29.9,1562.1-8.4,1920,58.8z"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="container" id="dash-cards">
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <div class="card text-center">
+            <h3 class="card-title">Announcements</h3>
+            <div class="ann-container mx-5 my-2 py-2 px-4">
+              <div class="ann-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                veritatis, eius possimus provident laboriosam fugit.
+              </div>
+              <div class="ann-date text-right">
+                Date
+              </div>
+            </div>
+            <div class="ann-container mx-5 my-2 py-2 px-4">
+              <div class="ann-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                veritatis, eius possimus provident laboriosam fugit.
+              </div>
+              <div class="ann-date text-right">
+                Date
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 my-4">
+          <div class="card d-flex flex-row">
+            <div class="dash-actions mx-5 my-2">
+              <img src="img/icons/apply training.svg" width="75px" alt="" />
+            </div>
+            <div class="dash-action-text">
+              Apply for training
+            </div>
+          </div>
+
+          <div class="card d-flex flex-row" id="relocation">
+            <div class="dash-actions mx-5 my-3" id="rel-icon">
+              <img src="img/icons/relocation.svg" width="75px" alt="" />
+            </div>
+            <div class="dash-action-text my-2" id="rel-text">
+              Apply for training
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <div class="card text-center">
+            <h3 class="card-title">Your application status</h3>
+            <div class="ann-container mx-5 my-2 py-2 px-4">
+              <div class="d-flex">
+                <div class="ann-desc mr-auto">
+                  Application #123
+                </div>
+                <div class="application-status">
+                  <em>On hold</em>
+                </div>
+              </div>
+              <div class="ann-date text-center">
+                View details
+              </div>
+            </div>
+
+            <div class="ann-container mx-5 my-2 py-2 px-4">
+              <div class="d-flex">
+                <div class="ann-desc mr-auto">
+                  Application #122
+                </div>
+                <div class="application-status">
+                  <strong>Approved</strong>
+                </div>
+              </div>
+              <div class="ann-date text-center">
+                View details
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- FOOTER SECTION -->
+     <footer>
+      <div id="footer-curve">
+        <svg
+          id="footer-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 388.3"
+        >
+          <path
+            d="M1920,288.3v100.1H0V0c250.3,56.3,1606.8,63.9,1919.6,0c0,62.2,0.8,120.7,0,146.5h0.3L1920,288.3L1920,288.3z"
+          ></path>
+        </svg>
+      </div>
+      <div id="contact-block">
+        <div class="container" id="contact-details">
+          <div class="row" >
+            <div class="col">
+              <h3>Contact Us</h3>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-sm-auto d-flex">
+              <img
+                src="img/icons/location_white.svg"
+                class="footer-icon"
+                alt=""
+              />
+              <p class="contact-field">Trade Tower</p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-sm-auto d-flex">
+              <img
+                src="img/icons/phone_white.svg"
+                class="footer-icon"
+                alt=""
+              />
+              <p class="contact-field">+977 9801208409</p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col-sm-auto d-flex">
+              <img
+                src="img/icons/mail_white.svg"
+                class="footer-icon"
+                alt=""
+              />
+              <p class="contact-field">support@littlebuddynepal.com</p>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col text-center">
+              <p>&copy; <span id="year"></span>- Little Buddy PreSchool All Rights Reserved.</p>
+            </div>
+          </div>
+
+         
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      //Get the current year for the copyright
+$("#year").text(new Date().getFullYear());
+</script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
