@@ -23,6 +23,7 @@
 }
 #form-card .card {
   border: 2px solid #ff7c00;
+  border-radius: 25px;
 }
 #form-section .card-body {
   padding-top: 0.5rem;
