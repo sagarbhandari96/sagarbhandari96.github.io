@@ -45,11 +45,11 @@
   border-radius: 15px;
 }
 
-#form-section label {
+.form-label {
   padding-left: 0.75rem;
   pointer-events: none;
 }
-#input-field {
+.input-field {
   padding-bottom: 1rem;
 }
 
@@ -66,6 +66,7 @@
 }
 .form-control:focus + .form-label .content-name,
 input:valid + .form-label .content-name {
+  opacity: 100%;
   transform: translateY(-2rem);
   font-size: 0.9rem;
   color: #ff7c00;
@@ -74,7 +75,7 @@ input:valid + .form-label .content-name {
 #log-in-btn {
   width: 50%;
 }
-#forgot-password {
+#link-text {
   font-size: 0.9rem;
   margin-top: 0.5rem;
   /* padding-right: 1.75rem; */
@@ -87,7 +88,7 @@ a:hover {
 }
 
 @media (max-width: 576px) {
-  label {
+  .form-label {
     transform: translateY(-4rem);
   }
   .content-name {
