@@ -77,8 +77,8 @@
     <!-- FORM SECTION  -->
     <div class="container" id="form-card">
       <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card mx-5 text-center" id="form-section">
+        <div class="col-lg-4 col-md-5 col-sm-7 col-10" >
+          <div class="card text-center" id="form-section">
             <img
               class="card-img-top"
               src="img/icons/sign_in.svg"
@@ -91,32 +91,45 @@
 
               <form class="form-inline" action="">
                 <div class="form-group text-left" id="input-field">
+                 
                   <input
-                    type="email"
-                    class="form-control mx-auto"
-                    placeholder="Username"
-                    id="username"
-                  />
-                  <label for="username" class="form-label text-left"
-                    >Username</label
-                  >
-                </div>
-                <div class="form-group text-left">
-                  <input
-                    type="password"
-                    class="form-control mx-auto"
-                    placeholder="Password"
-                    id="password"
-                  />
-                  <label for="password" class="form-label text-left"
-                    >Password</label
-                  >
+                  type="text"
+                  class="form-control mx-auto"
                   
-                </div>
+                  id="username"
+                  autocomplete="off"
+                  required
+                />
+                <label for="username" class="form-label text-left"
+                >
+                <span class="content-name">Username</span> 
+                
+                </label
+              >       
+                            
+               </div>
+               <div class="form-group text-left" >
+                 
+                <input
+                type="password"
+                class="form-control mx-auto"
+                
+                name="password"
+                autocomplete="off"
+                required
+              />
+              <label for="password" class="form-label text-left"
+              >
+              <span class="content-name">Password</span> 
+              
+              </label
+            >       
+                          
+             </div>
                 
               </form>
               <a href="#">
-              <p class="text-right" id="forgot-password">Forgot password</p></a>
+              <p class="text-left px-4 py-1" id="forgot-password">Forgot password</p></a>
               <a class="" href="user_dashboard.html"
                 ><button class="btn btn-register" id="log-in-btn">
                   Log In
