@@ -26,13 +26,14 @@
   <body>
     <div id="navigation">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-nav">
-        <div class="container">
+        <div class="container" id="navbar-box">
           <a href="index.html" class="navbar-brand">
             <img
               src="img/logo.svg"
               alt="Little Buddy Logo"
               width="170px"
               height="81px"
+              id="lbp-logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -48,9 +49,10 @@
               <li class="nav-item px-4">
                 <img
                   src="img/icons/notif.svg"
-                  height="30px"
-                  width="30px"
+                  height="25px"
+                  width="25px"
                   alt="notification icon"
+                  id="notif-icon"
                 />
               </li>
 
@@ -77,7 +79,7 @@
           </div>
         </div>
       </nav>
-      <svg
+      <!-- <svg
         class="curve"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1920 60"
@@ -85,95 +87,161 @@
         <path
           d="M1920,58.8v123.9H0V58.3C558.6-29.9,1562.1-8.4,1920,58.8z"
         ></path>
-      </svg>
+      </svg> -->
     </div>
 
     <div class="container" id="dash-cards">
       <div class="row">
-        <div class="col-md-6 my-4">
-          <div class="card text-center">
-            <h3 class="card-title">Announcements</h3>
-            <div class="ann-container mx-5 my-2 py-2 px-4">
+        <div class="col-lg-6 col-md-7 my-4">
+          <div class="card text-left px-5">
+            <h4 class="card-title">Announcements</h4>
+            <hr id="ann-hr-1">
+            <!-- Announcement card 1 -->
+            <div class="ann-container py-2">
+              <div class="title-1">
+                Announcement title
+              </div>
+              <div class="d-flex">
+                <div class="title-2">Published on: </div>
+                <div class="ann-date">
+                  2077/1/23
+                </div>
+              </div>
+              
               <div class="ann-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                 veritatis, eius possimus provident laboriosam fugit.
-              </div>
-              <div class="ann-date text-right">
-                Date
-              </div>
+              </div> 
+              <div class="view-details text-center">
+                View details
+                <hr id="view-details-hr"> 
+              </div> 
+              <hr id="ann-hr-2">             
             </div>
-            <div class="ann-container mx-5 my-2 py-2 px-4">
-              <div class="ann-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                veritatis, eius possimus provident laboriosam fugit.
-              </div>
-              <div class="ann-date text-right">
-                Date
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 my-4">
-          <div class="card d-flex flex-row">
-            <div class="dash-actions mx-5 my-2">
-              <img src="img/icons/apply training.svg" width="75px" alt="" />
-            </div>
-            <div class="dash-action-text">
-              Apply for training
-            </div>
-          </div>
 
-          <div class="card d-flex flex-row" id="relocation">
-            <div class="dash-actions mx-5 my-3" id="rel-icon">
-              <img src="img/icons/relocation.svg" width="75px" alt="" />
+            <!-- Announcement card 2 -->
+            <div class="ann-container py-2">
+              <div class="title-1">
+                Announcement title
+              </div>
+              <div class="d-flex">
+                <div class="title-2">Published on: </div>
+                <div class="ann-date">
+                  2077/1/23
+                </div>
+              </div>
+              
+              <div class="ann-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                veritatis, eius possimus provident laboriosam fugit.
+              </div> 
+              <div class="view-details text-center">
+                View details
+                <hr id="view-details-hr"> 
+              </div> 
+               
+              <hr id="ann-hr-2">             
             </div>
-            <div class="dash-action-text my-2" id="rel-text">
-              Apply for training
-            </div>
+          
+            
           </div>
         </div>
+        
+        <div class="col-lg-6 col-md-5 col-sm-10 my-4">
+          <div class="d-flex my-4">
+            <div class="ml-auto dash-buttons" >
+              <a class="" href="#"
+              ><button class="btn btn-register"> 
+                <img src="img/icons/apply training-white.svg" height="40px" alt=""> 
+                <div  id="btn-text">
+                  Apply for training
+                </div> 
+              </button></a
+            > 
+            </div>            
+          </div>
+          <div class="d-flex">
+            <div class="ml-auto dash-buttons" >
+              <a class="" href="#"
+              ><button class="btn btn-register"> 
+                <img src="img/icons/relocation-white.svg" height="40px" alt=""> 
+                <div  id="btn-text">
+                  Apply for relocation
+                </div> 
+              </button></a
+            > 
+            </div>
+          </div>
+          
+          
+        </div>        
       </div>
 
+        <!-- APPLICATION STATUS  -->
       <div class="row">
-        <div class="col-md-6 my-4">
-          <div class="card text-center">
-            <h3 class="card-title">Your application status</h3>
-            <div class="ann-container mx-5 my-2 py-2 px-4">
+        <div class="col-lg-6 col-md-7 my-4">
+          <div class="card text-left px-5">
+            <h4 class="card-title">Your application status</h4>
+            <hr id="ann-hr-1">
+            <!-- Application card 1 -->
+            <div class="ann-container py-2">
+              <div class="title-1">
+                Training name
+              </div>
               <div class="d-flex">
-                <div class="ann-desc mr-auto">
-                  Application #123
+                <div class="title-2">Application no.: 
+                  <span class="ann-date">
+                    1234
+                  </span>
                 </div>
                 <div class="application-status">
-                  <em>On hold</em>
+                  <span class="badge badge-secondary">On hold</span>
                 </div>
+                
               </div>
-              <div class="ann-date text-center">
+              
+              <div class="view-details text-center">
                 View details
-              </div>
+                <hr id="view-details-hr"> 
+              </div> 
+              <hr id="ann-hr-2">             
             </div>
 
-            <div class="ann-container mx-5 my-2 py-2 px-4">
+            <!-- Application card 2 -->
+            <div class="ann-container py-2">
+              <div class="title-1">
+                Training name
+              </div>
               <div class="d-flex">
-                <div class="ann-desc mr-auto">
-                  Application #122
+                <div class="title-2">Application no.: 
+                  <span class="ann-date">
+                    1234
+                  </span>
                 </div>
                 <div class="application-status">
-                  <strong>Approved</strong>
+                  <span class="badge badge-success">Approved</span>
                 </div>
+                
               </div>
-              <div class="ann-date text-center">
+              
+              <div class="view-details text-center">
                 View details
-              </div>
+                <hr id="view-details-hr"> 
+              </div> 
+              <hr id="ann-hr-2">             
             </div>
+          
+            
           </div>
-        </div>
+        </div> 
       </div>
+      
     </div>
 
      <!-- FOOTER SECTION -->
      <footer>
       <div id="footer-curve">
-        <svg
+        <!-- <svg
           id="footer-svg"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1920 388.3"
@@ -181,7 +249,7 @@
           <path
             d="M1920,288.3v100.1H0V0c250.3,56.3,1606.8,63.9,1919.6,0c0,62.2,0.8,120.7,0,146.5h0.3L1920,288.3L1920,288.3z"
           ></path>
-        </svg>
+        </svg> -->
       </div>
       <div id="contact-block">
         <div class="container" id="contact-details">

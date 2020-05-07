@@ -1,13 +1,30 @@
 #navigation {
   position: relative;
   width: 100%;
-  background: linear-gradient(
-    to bottom right,
-    rgba(34, 42, 183, 0.27),
-    rgba(0, 183, 230, 0.7)
-  );
-  min-height: 25vh;
+
+  /* min-height: 10vh; */
 }
+
+#navbar-box {
+  /* border: 1px solid grey; */
+  border-radius: 20px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  /* background: linear-gradient(
+    to bottom,
+    rgba(34, 42, 183, 0.01),
+    rgba(0, 183, 230, 0.1)
+  ); */
+  padding-bottom: 1.5rem;
+}
+.navbar-nav li a {
+  color: rgb(255, 68, 0) !important;
+}
+
+.navbar-brand {
+  padding-top: 1rem !important;
+  padding-left: 1rem !important;
+}
+
 .curve {
   position: absolute;
   bottom: 0;

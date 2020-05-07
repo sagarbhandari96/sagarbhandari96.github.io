@@ -126,7 +126,6 @@ body {
   transform: translateY(5vh);
   margin-top: 10vh;
   color: white;
-
   background-color: #ff7c00;
 }
 
@@ -137,7 +136,7 @@ body {
   width: 20px;
 }
 .contact-field {
-  font-size: 1.2rem;
+  font-size: 0.95rem;
   padding-top: 20px;
   padding-left: 20px;
 }
