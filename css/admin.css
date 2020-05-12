@@ -1,0 +1,198 @@
+body {
+  font-size: 1rem;
+}
+.wrapper {
+  display: flex;
+}
+#navbarDropdown {
+  color: orangered !important;
+  padding-right: 2rem;
+}
+.navbar {
+  margin-left: 300px;
+  z-index: 1;
+}
+.navbar .dropdown-menu a {
+  color: orangered !important;
+}
+.navbar .dropdown-item {
+  background-color: white;
+  padding: 0.3rem 0.7rem;
+}
+.navbar .dropdown-item:hover {
+  background-color: rgb(228, 228, 228);
+}
+.sidebar {
+  position: fixed;
+  min-width: 300px;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  /* max-height: fit-content; */
+  background: #051639;
+  color: #fff;
+  overflow-y: auto;
+
+  left: 0;
+  transition: 0.1s left ease-out;
+}
+
+#check {
+  display: none;
+}
+#logo {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+label #side-burger {
+  cursor: pointer;
+  margin-left: 20px;
+}
+label #side-burger:hover {
+  color: #ff7c00;
+}
+#check:checked ~ .sidebar {
+  left: -230px;
+}
+#check:checked ~ .sidebar span {
+  display: none;
+}
+#check:checked ~ .sidebar a {
+  margin-left: 230px;
+}
+#check:checked ~ .sidebar .dropdown-item #accordion {
+  padding-right: 0;
+}
+#check:checked ~ .sidebar #active-page i {
+  color: #ff7c00;
+}
+#check:checked ~ .sidebar #active-page {
+  background-color: #061b44;
+}
+
+#active-page {
+  border-left: 3px solid #ff7c00;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  /* font-size: 1.2rem; */
+}
+.dropdown-item {
+  padding: 0rem;
+  background-color: #051639;
+  /* font-size: 1rem; */
+}
+.dropdown-item:hover {
+  background-color: #ff7c00;
+}
+.dropdown-item .btn {
+  padding: 0;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.dropdown-item #accordion {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 150px;
+  border-radius: 0.5rem;
+  transition: 0.1s ease-in;
+  transition-property: background;
+}
+.dropdown-item #accordion:hover {
+  background-color: #ff7c00;
+}
+
+.sidebar .single-menu {
+  position: relative;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  transition: 0.1s ease-in;
+  transition-property: background;
+}
+.sidebar .single-menu:hover {
+  background-color: #ff7c00;
+  border-radius: 0.5rem;
+}
+
+#memberSubmenu .submenu {
+  display: block;
+  background-color: #051639;
+}
+.sidebar .btn {
+  font-size: inherit;
+}
+.sidebar .btn:focus {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.submenu a {
+  display: block;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  background-color: #051639;
+}
+
+.submenu {
+  overflow: hidden;
+  padding: 0;
+  transition: 0.1s all;
+}
+
+.sidebar i {
+  padding-right: 1rem;
+}
+
+.content {
+  position: absolute;
+  left: 303px;
+  transform: translateY(-4rem);
+  width: 73vw;
+
+  transition: 0.1s left ease-out;
+}
+#check:checked ~ .content {
+  left: 70px;
+}
+
+.content .card-align {
+  margin-left: 2.5rem;
+}
+.content .card {
+  border-radius: 1rem;
+
+  /* border: transparent; */
+}
+.content .status-card {
+  color: #ff7c00;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+.content .status-card:hover {
+  background-color: #ff7c00;
+  color: #fff;
+}
+.content .status-card {
+  /* background-color: #ffebd8; */
+}
+
+.content .card-name p {
+  transform: translateY(-1rem);
+  /* white-space: nowrap; */
+}
+.card-activity {
+  width: 80%;
+}
+.time-elapsed {
+  color: grey;
+}
+.activity-icon {
+  color: #ff7c00;
+}
