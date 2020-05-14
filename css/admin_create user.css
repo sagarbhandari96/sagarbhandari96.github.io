@@ -83,11 +83,6 @@ input:valid + .form-label .content-name {
   /* margin: auto; */
 }
 
-#reasons-field {
-  margin-top: 0.7rem;
-  height: 250px;
-}
-
 .label-persistent {
   transform: translateY(-2rem);
   color: #ff7c00;

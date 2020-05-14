@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="css/admin.css" />
     <link rel="stylesheet" href="css/admin_create user.css" />
+    <link rel="stylesheet" href="css/admin_update_training.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -89,12 +90,12 @@
             </li></a
           >
           <a href="admin_create_user.html">
-            <li class="single-menu" id="active-page">
+            <li class="single-menu" id="inactive-page">
               <i class="fas fa-user-plus"></i> <span> User creation</span>
             </li></a
           >
-          <a href="admin_update_training.html">
-            <li class="single-menu" id="inactive-page">
+          <a href="#">
+            <li class="single-menu" id="active-page">
               <i class="fas fa-pen"></i>
               <span>Update Training Details</span>
             </li>
@@ -142,7 +143,7 @@
       <div class="content">
         <div class="container">
           <div class="dashboard-title">
-            <p class="h1 mx-5 my-4">Create User</p>
+            <p class="h1 mx-5 my-4">Update Training Details</p>
           </div>
           <div class="row card-align">
             <!-- FORM SECTION  -->
@@ -152,19 +153,45 @@
                   <div class="card text-center" id="form-section">
                     <img
                       class="card-img-top"
-                      src="img/icons/new_account.svg"
+                      src="img/icons/apply training.svg"
                       alt="Card image cap"
                       height="75px"
                       width="75px"
                     />
                     <div class="card-body justify-content-center">
-                      <h3 class="card-title">Add New User</h3>
-
+                      <h3 class="card-title">Add New Training Details</h3>
+                      <p class="text-left px-4" id="card-subtitle">
+                        Fields marked with asterisk(*) are mandatory.
+                      </p>
                       <form
                         class="form-inline justify-content-center"
                         action=""
                       >
-                        <!-- Name and address  -->
+                        <!-- description of training -->
+
+                        <div class="form-row col-lg-12" id="description-field">
+                          <div class="form-group text-left col-12">
+                            <textarea
+                              name=""
+                              placeholder="Training Description"
+                              rows="4"
+                              class="form-control"
+                            ></textarea>
+                            <label
+                              for="reasons"
+                              class="form-label text-left"
+                              id="textarea-label"
+                            >
+                              <span id="textarea-span"
+                                >Description of Training Program
+                                <span id="card-subtitle">*</span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <!-- Type of training and 
+                            Duration of training  -->
                         <div class="form-row col-lg-12">
                           <div
                             class="form-group text-left col-12 col-md-6 input-field"
@@ -177,7 +204,7 @@
                               required
                             />
                             <label for="name" class="form-label text-left">
-                              <span class="content-name">Name</span>
+                              <span class="content-name">Type of Training</span>
                             </label>
                           </div>
                           <div
@@ -186,17 +213,20 @@
                             <input
                               type="text"
                               class="form-control mx-auto"
-                              name="address"
+                              name="duration"
                               autocomplete="off"
                               required
                             />
-                            <label for="address" class="form-label text-left">
-                              <span class="content-name">Address</span>
+                            <label for="duration" class="form-label text-left">
+                              <span class="content-name"
+                                >Duration of Training
+                                <span id="card-subtitle">*</span>
+                              </span>
                             </label>
                           </div>
                         </div>
 
-                        <!-- EMAIL  -->
+                        <!-- Training instructor  -->
                         <div class="form-row col-lg-12" id="email-field">
                           <div class="form-group text-left col-12 input-field">
                             <input
@@ -207,79 +237,53 @@
                               required
                             />
                             <label for="email" class="form-label text-left">
-                              <span class="content-name">Email</span>
+                              <span class="content-name"
+                                >Training Instructor
+                                <span id="card-subtitle">*</span>
+                              </span>
                             </label>
                           </div>
                         </div>
-                        <!-- CONTACT NUMBER -->
-                        <div class="form-row col-lg-12" id="email-field">
-                          <div class="form-group text-left col-12 input-field">
-                            <input
-                              type="text"
-                              class="form-control mx-auto"
-                              id="contact"
-                              autocomplete="off"
-                              required
-                            />
-                            <label for="contact" class="form-label text-left">
-                              <span class="content-name">Contact number</span>
-                            </label>
-                          </div>
-                        </div>
+                        <!-- Timing slots -->
 
-                        <div class="form-row col-lg-5" id="add-field">
-                          <i class="fas fa-plus-circle fa-lg" id="add-icon"></i>
-                          <span class="my-1">Add another field</span>
-                        </div>
-
-                        <!-- DEPARTMENT -->
-                        <div class="form-row col-lg-12">
-                          <div
-                            class="form-group text-left col-12 col-md-6 input-field"
-                          >
-                            <input
-                              type="text"
-                              class="form-control mx-auto"
-                              id="department"
-                              autocomplete="off"
-                              required
-                            />
-                            <label
-                              for="department"
-                              class="form-label text-left"
-                            >
-                              <span class="content-name">Department</span>
-                            </label>
-                          </div>
-                          <div
-                            class="form-group text-left col-12 col-md-6 input-field"
-                          >
-                            <input
-                              type="text"
-                              class="form-control mx-auto"
-                              name="position"
-                              autocomplete="off"
-                              required
-                            />
-                            <label for="position" class="form-label text-left">
-                              <span class="content-name">Position</span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <!-- role  -->
                         <div class="form-row col-lg-12" id="dob-gender">
                           <div
                             class="form-group text-left col-12 col-md-6 input-field"
                           >
                             <select class="form-control" id="gender">
-                              <option selected>Select...</option>
+                              <option selected
+                                >View available timing slots...</option
+                              >
                               <option value="male">Role 1</option>
                               <option value="female">Role 2</option>
                               <option value="other">Role 3</option>
                             </select>
                             <label for="gender" class="form-label text-left">
-                              <span class="label-persistent">Role</span>
+                              <span class="label-persistent"
+                                >Timing Slots
+                                <span id="card-subtitle">*</span>
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <!-- ADDITIONAL Description -->
+                        <div class="form-row col-lg-12" id="description-field">
+                          <div class="form-group text-left col-12">
+                            <textarea
+                              name=""
+                              placeholder="Training Description"
+                              rows="4"
+                              class="form-control"
+                            ></textarea>
+                            <label
+                              for="reasons"
+                              class="form-label text-left"
+                              id="textarea-label"
+                            >
+                              <span id="textarea-span"
+                                >Additional information on training
+                              </span>
                             </label>
                           </div>
                         </div>
@@ -287,7 +291,7 @@
 
                       <a class="" href="#"
                         ><button class="btn btn-register" id="log-in-btn">
-                          Create Account
+                          Add
                         </button></a
                       >
                     </div>
