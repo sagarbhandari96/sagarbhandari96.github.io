@@ -140,6 +140,7 @@ body {
   padding-top: 20px;
   padding-left: 20px;
 }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;

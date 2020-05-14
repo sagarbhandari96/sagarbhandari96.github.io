@@ -61,11 +61,24 @@ label #side-burger:hover {
 #check:checked ~ .sidebar a {
   margin-left: 230px;
 }
+.sidebar i {
+  color: #fff;
+  padding-right: 1rem;
+}
 #check:checked ~ .sidebar .dropdown-item #accordion {
   padding-right: 0;
 }
 #check:checked ~ .sidebar #active-page i {
   color: #ff7c00;
+  margin-left: 230px;
+}
+#check:checked ~ .sidebar #inactive-page i {
+  color: #fff;
+  margin-left: 230px;
+}
+#check:checked ~ .sidebar i {
+  color: white;
+  /* margin-left: 230px; */
 }
 #check:checked ~ .sidebar #active-page {
   background-color: #061b44;
@@ -99,12 +112,9 @@ label #side-burger:hover {
   padding-bottom: 1rem;
   padding-top: 1rem;
   padding-right: 150px;
-  border-radius: 0.5rem;
-  transition: 0.1s ease-in;
-  transition-property: background;
-}
-.dropdown-item #accordion:hover {
-  background-color: #ff7c00;
+  /* border-radius: 0.5rem; */
+  /* transition: 0.1s ease-in;
+  transition-property: background; */
 }
 
 .sidebar .single-menu {
@@ -112,12 +122,26 @@ label #side-burger:hover {
   padding-bottom: 1rem;
   padding-top: 1rem;
   padding-left: 1.5rem;
-  transition: 0.1s ease-in;
-  transition-property: background;
+  /* transition: 0.1s ease-in;
+  transition-property: background; */
 }
 .sidebar .single-menu:hover {
   background-color: #ff7c00;
   border-radius: 0.5rem;
+}
+.members-list #accordion:hover {
+  background-color: #ff7c00;
+  color: #fff;
+}
+.members-list #accordion {
+  position: relative;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 10rem;
+}
+#check:checked ~ .sidebar #accordion {
+  padding-right: 1rem;
 }
 
 #memberSubmenu .submenu {
@@ -144,10 +168,6 @@ label #side-burger:hover {
   overflow: hidden;
   padding: 0;
   transition: 0.1s all;
-}
-
-.sidebar i {
-  padding-right: 1rem;
 }
 
 .content {
