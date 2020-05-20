@@ -3,7 +3,7 @@
   margin-bottom: 10vh;
 }
 #form-card .card {
-  border: 2px solid #ff7c00;
+  border: 2px solid #ff922c;
   border-radius: 25px;
 }
 #form-section .card-body {
@@ -13,7 +13,7 @@
   margin-top: 5vh;
 }
 #form-section .card-title {
-  color: #ff7c00;
+  color: #ff922c;
   padding-bottom: 1rem;
 }
 #form-section .form-group {
@@ -50,7 +50,7 @@ input:valid + .form-label .content-name {
   opacity: 100%;
   transform: translateY(-2rem);
   font-size: 0.9rem;
-  color: #ff7c00;
+  color: #727272;
 }
 
 #log-in-btn {
@@ -85,13 +85,13 @@ input:valid + .form-label .content-name {
 
 .label-persistent {
   transform: translateY(-2rem);
-  color: #ff7c00;
+  color: #727272;
   font-size: 0.9rem;
 }
 
 #textarea-span {
   transform: translateY(-3rem);
-  color: #ff7c00;
+  color: rgb(126, 126, 126);
   font-size: 0.9rem;
 }
 
@@ -120,7 +120,7 @@ input:valid + .form-label .content-name {
   padding-right: 0.5rem;
 }
 #log-in-btn {
-  background-color: #ff7c00;
+  background-color: #fa8b22;
   width: 35%;
   color: #fff;
   border-radius: 2rem;
