@@ -199,8 +199,8 @@ label #side-burger:hover {
   background-color: #ff7c00;
   color: #fff;
 }
-.content .status-card {
-  /* background-color: #ffebd8; */
+#submenu-list:hover {
+  background-color: #ff7c00;
 }
 
 .content .card-name p {

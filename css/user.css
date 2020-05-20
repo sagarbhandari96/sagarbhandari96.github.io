@@ -116,9 +116,6 @@
 #rel-text {
   padding-top: 1rem;
 }
-#rel-icon {
-  /* padding-left: 1rem; */
-}
 
 .ann-container:hover {
   transform: translateY(-0.2rem);

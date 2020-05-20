@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/admin_create user.css" />
+    <!-- <link rel="stylesheet" href="css/admin_update_training.css" /> -->
+    <link rel="stylesheet" href="css/registered_members.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <title>User Profile</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+      <div class="container">
+        <!-- <a href="index.html" class="navbar-brand">
+          <img
+            src="img/logo.svg"
+            alt="Little Buddy Logo"
+            height="75px"
+            id="lbp-logo"
+        /></a> -->
+        <ul class="navbar-nav ml-auto my-3">
+          <li class="nav-item px-4">
+            <img
+              src="img/icons/notif.svg"
+              height="25px"
+              width="25px"
+              alt="notification icon"
+              id="notif-icon"
+            />
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              User Name
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Account settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <input type="checkbox" id="check" />
+
+      <nav class="sidebar">
+        <div class="d-flex">
+          <span>
+            <img src="img/logo.svg" height="75px" id="logo" alt=""
+          /></span>
+          <label for="check" class="ml-auto py-5 mx-3">
+            <i class="fas fa-bars fa-lg" id="side-burger"></i>
+          </label>
+        </div>
+        <ul class="list-unstyled componenets">
+          <a href="admin_index.html">
+            <li class="single-menu" id="inactive-page">
+              <span></span>
+              <i class="fas fa-tachometer-alt"></i> <span>Dashboard</span>
+            </li></a
+          >
+          <a href="admin_create_user.html">
+            <li class="single-menu" id="inactive-page">
+              <i class="fas fa-user-plus"></i> <span> User creation</span>
+            </li></a
+          >
+          <a href="#">
+            <li class="single-menu" id="inactive-page">
+              <i class="fas fa-pen"></i>
+              <span>Update Training Details</span>
+            </li>
+          </a>
+
+          <li class="members-list" id="active-page">
+            <a
+              href="#memberSubmenu"
+              class="btn navbar-toggler"
+              data-toggle="collapse"
+              data-target="#memberSubmenu"
+              id="accordion"
+            >
+              <i class="fas fa-list"></i> <span> Members list</span></a
+            >
+            <div class="collapse submenu" id="memberSubmenu">
+              <a href="registered_members.html" id="submenu-list">
+                <span> Registered Members</span></a
+              >
+              <a href="#" id="submenu-list"> <span> Approved Members</span></a>
+              <a href="#" id="submenu-list"> <span> Declined Members</span></a>
+              <a href="#" id="submenu-list"> <span> On-hold Members</span></a>
+            </div>
+          </li>
+
+          <a href="#">
+            <li class="single-menu" id="inactive-page">
+              <i class="far fa-check-circle"></i>
+              <span>Completed Training</span>
+            </li>
+          </a>
+          <a href="#">
+            <li class="single-menu" id="inactive-page">
+              <i class="fas fa-map-marked-alt"></i>
+              <span> User Relocation</span>
+            </li>
+          </a>
+          <a href="#">
+            <li class="single-menu">
+              <i class="fas fa-user-edit"></i>
+              <span> View/Edit User details</span>
+            </li>
+          </a>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="container">
+          <div class="dashboard-title">
+            <p class="h3 mx-5 my-4">User Profile</p>
+          </div>
+          <!-- Profile details  -->
+          <div class="row col-12 my-5">
+            <div class="col-8">
+              <div class="main-details">
+                <div class="row">
+                  <div class="col-3" id="profile-pic-container">
+                    <img
+                      src="img/profile_pic.png"
+                      height="150px"
+                      id="profile-picture"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-5">
+                    <div class="mx-3 my-3" id="user-name">John Doe</div>
+                    <div id="user-detail-container">
+                      <div class="d-flex">
+                        <div class="mx-3" id="address-title">Address</div>
+                        <div id="user-address">Kathmandu</div>
+                      </div>
+                    </div>
+                    <div id="user-detail-container">
+                      <div class="d-flex">
+                        <div class="mx-3" id="contact-title">Contact</div>
+                        <div id="user-contact">9876543210</div>
+                      </div>
+                    </div>
+                    <div id="user-detail-container">
+                      <div class="d-flex">
+                        <div class="mx-3" id="dob-title">DOB</div>
+                        <div id="user-dob">1992/1/2</div>
+                        <div id="calendar">AD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex my-4">
+                <div class="ml-auto mx-5 dash-buttons">
+                  <a class="" href="#"
+                    ><button class="btn perform-action">
+                      <div id="btn-text">
+                        <i class="far fa-edit"></i>
+                        Edit Details
+                      </div>
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="ml-auto mx-5 dash-buttons">
+                  <a class="" href="#"
+                    ><button class="btn perform-action">
+                      <div id="btn-text">
+                        <i class="fas fa-key"></i>
+                        Change password
+                      </div>
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="section-divider" />
+          <!-- Bio -->
+          <div id="detail-sections-container">
+            <div id="bio-title" class="my-1">Bio</div>
+            <div id="bio-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit a
+              quaerat dolorum maxime architecto fugiat laboriosam iste. Error
+              vero, laborum nulla, eligendi culpa aspernatur enim cum ducimus,
+              numquam possimus non.
+            </div>
+          </div>
+          <hr class="section-divider" />
+          <!-- Address -->
+          <div id="detail-sections-container">
+            <div id="bio-title" class="my-1">Address</div>
+            <div id="user-detail-container">
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Permanent Address</div>
+                <div>225 Bohemia St. Lombard, IL 60148</div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Residential Address</div>
+                <div>
+                  62 Lilac Lane Morristown, NJ 07960
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="section-divider" />
+
+          <!-- Personal Information -->
+          <div id="detail-sections-container">
+            <div id="bio-title" class="my-1">Personal Information</div>
+            <div id="user-detail-container">
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Father's Name</div>
+                <div>225 Bohemia St. Lombard, IL 60148</div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Grandfather's Name</div>
+                <div>
+                  62 Lilac Lane Morristown, NJ 07960
+                </div>
+              </div>
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Marital Status</div>
+                <div>
+                  Unmarried
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="section-divider" />
+
+          <!-- Citizenship Information -->
+          <div id="detail-sections-container">
+            <div id="bio-title" class="my-1">Citizenship Information</div>
+            <div id="user-detail-container">
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Issue Date</div>
+                <div>2015-8-3</div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Citizenship No.</div>
+                <div>
+                  21-02-12-94754
+                </div>
+              </div>
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Issue district</div>
+                <div>
+                  Kathmandu
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Date of Birth district</div>
+                <div>
+                  1992/1/2
+                </div>
+              </div>
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Birth Place</div>
+                <div>
+                  62 Lilac Lane Morristown, NJ 07960
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="section-divider" />
+
+          <!-- Emergency Contact -->
+          <div id="detail-sections-container">
+            <div id="bio-title" class="my-1">Emergency Contact</div>
+            <div id="user-detail-container">
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Name</div>
+                <div>Peter Doe</div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Address</div>
+                <div>
+                  62 Lilac Lane Morristown, NJ 07960
+                </div>
+              </div>
+              <div class="d-flex my-3">
+                <div class="mx-3" id="info-title">Contact</div>
+                <div>
+                  9876545672
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="mx-3" id="info-title">Relation</div>
+                <div>
+                  Uncle
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="section-divider" />
+
+          <div class="row col-12 my-5">
+            <div class="col-4">
+              <div class="mr-auto mx-5">
+                <a class="" href="#"
+                  ><button class="btn action-buttons accept">
+                    <div id="btn-text">
+                      <i class="far fa-check-circle"></i>
+                      Approve
+                    </div>
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mr-auto mx-5">
+                <a class="" href="#"
+                  ><button class="btn action-buttons decline">
+                    <div id="btn-text">
+                      <i class="far fa-times-circle"></i>
+                      Decline
+                    </div>
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mr-auto mx-5">
+                <a class="" href="#"
+                  ><button class="btn action-buttons on-hold">
+                    <div id="btn-text">
+                      <i class="far fa-pause-circle"></i>
+                      On Hold
+                    </div>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </body>
+</html>
