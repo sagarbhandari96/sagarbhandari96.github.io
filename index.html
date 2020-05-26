@@ -3,138 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/1bdd689cd4.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Training Portal-test</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-
-    <title>Training Portal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   </head>
   <body>
-    <header id="home-section">
-      <nav class="navbar navbar-expand-lg navbar-dark " id="main-nav">
+    <div id="home-section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container">
-          <a href="index.html" class="navbar-brand">
-            <img
-              src="img/logo.svg"
-              alt="Little Buddy Logo"
-              width="170px"
-              height="81px"
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo.svg" height="75px" alt="Little Buddy Logo"
           /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedContent"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item px-4">
-                <a href="#home-section" class="nav-link">Home</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
-              <li class="nav-item px-4">
-                <a href="#services-section" class="nav-link">Services</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
               </li>
-              <li class="nav-item px-4">
-                <a href="#about-us" class="nav-link">About Us</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
               </li>
-              <li class="nav-item px-4">
-                <a href="#contact-us" class="nav-link">Contact Us</a>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contact Us</a>
               </li>
-              <li class="nav-item px-4">
-                <a href="/log_in.html">
-                <button class="btn btn-outline-light">LOG IN</button></a>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">
+                  <button class="btn">Log In</button></a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <!-- HOME SECTION -->
-
       <div class="color-overlay">
-        <div>
-          <div class="home-inner container">
-            <div class="text-center py-5">
-              <h2 class="display-5" id="home-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing <br />
-                Delectus eveniet a non eius earum quod?
-              </h2>
+        <!-- <div> -->
+
+        <div class="container">
+          <div class="animated-svg">
+            <svg class="circle-1" height="150" width="150">
+              <circle cx="75" cy="75" r="75" />
+            </svg>
+          </div>
+          <div class="animated-svg-2">
+            <svg class="circle-1" height="200" width="200">
+              <circle cx="100" cy="100" r="100" />
+            </svg>
+          </div>
+          <div class="row col-12 home-inner">
+            <div class="col-lg-6 col-0 order-2 text-center" id="training-svg">
+              <img src="img/training _svg_1.svg" height="300px" alt="" />
             </div>
-          </div>
-          <svg
-            class="oval-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1920 60"
-          >
-            <path
-              d="M1920,58.8v123.9H0V58.3C558.6-29.9,1562.1-8.4,1920,58.8z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </header>
-    <!-- LEARN MORE -->
-    <section id="learn-more-section">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center py-2">
-            <a class="" href="sign_up.html"
-              ><button class="btn btn-register">Register New Account</button></a
-            >
-
-            <p id="learn-text">Learn More</p>
-            <a href="#services">
-              <img src="img/down_arrow.gif" width="20px" height="20px" alt=""
-            /></a>
+            <div class="col-lg-6 col-12 order-1">
+              <h1 class="display-4">Lorem ipsum</h1>
+              <h2 class="display-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et,
+                illo.
+              </h2>
+              <button class="btn">Register</button>
+            </div>
+            
           </div>
         </div>
+        <svg
+          class="curves-tp-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 80"
+        >
+          <path
+            d="M1920,2.6V90H0V62.6c104.8-23.1,262-51.3,454.3-60C716.1-9.3,883,22.2,1063.9,38.7C1265.5,57.1,1555.1,63.3,1920,2.6z"
+          />
+        </svg>
+        <svg
+          class="curves-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 62.5"
+        >
+          <path
+            d="M0,62.5c104.8-23.1,262-51.3,454.3-60c261.8-11.9,428.6,19.6,609.6,36.1C1265.5,57,1555.1,63.2,1920,2.5c0,20,0,40,0,60
+          C1280,62.5,640,62.5,0,62.5z"
+          />
+        </svg>
+        <!-- </div> -->
       </div>
-    </section>
+    </div>
 
-    <!-- SERVICES SECTION -->
-    <section id="services">
+    <!-- SERVICES SECTION  -->
+    <div id="our-services">
       <div class="container">
         <div class="row">
           <div class="col text-center py-1">
-            <p id="section-title">What do we do?</p>
+            <h2 id="section-title">What do we do?</h2>
             <p id="section-desc">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
-              quia incidunt! <br />
+              quia incidunt! <br>
               Pariatur facere hic incidunt possimus eligendi! Perferendis,
               voluptate iusto!
             </p>
           </div>
         </div>
-
         <div class="row py-5">
           <div class="col-md-4 py-3">
             <div class="card mx-auto py-3 text-center">
-              <img
-                class="card-img-top"
-                src="img/icons/cv upload.svg"
-                alt="Card image cap"
-                height="75px"
-                width="75px"
-              />
+              <img class="card-img-top" src="img/icons/cv upload.svg" alt="Card image cap" height="75px" width="75px">
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum</h5>
                 <p class="card-text">
@@ -146,13 +142,7 @@
           </div>
           <div class="col-md-4 py-3">
             <div class="card mx-auto py-3 text-center">
-              <img
-                class="card-img-top"
-                src="img/icons/tel_interview.svg"
-                alt="Card image cap"
-                height="75px"
-                width="75px"
-              />
+              <img class="card-img-top" src="img/icons/tel_interview.svg" alt="Card image cap" height="75px" width="75px">
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum</h5>
                 <p class="card-text">
@@ -164,13 +154,7 @@
           </div>
           <div class="col-md-4 py-3">
             <div class="card mx-auto py-3 text-center">
-              <img
-                class="card-img-top"
-                src="img/icons/location.svg"
-                alt="Card image cap"
-                height="75px"
-                width="75px"
-              />
+              <img class="card-img-top" src="img/icons/location.svg" alt="Card image cap" height="75px" width="75px">
               <div class="card-body">
                 <h5 class="card-title">Lorem ipsum</h5>
                 <p class="card-text">
@@ -182,142 +166,150 @@
           </div>
         </div>
       </div>
-    </section>
+      <svg
+          class="curves-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 62.5"
+        >
+          <path
+            d="M0,62.5c104.8-23.1,262-51.3,454.3-60c261.8-11.9,428.6,19.6,609.6,36.1C1265.5,57,1555.1,63.2,1920,2.5c0,20,0,40,0,60
+          C1280,62.5,640,62.5,0,62.5z"
+          />
+        </svg>
+    </div>
 
-    <!-- WHY US SECTION -->
-    <section id="why-us">
+
+
+<!-- ABOUT US -->
+
+    <div id="about-us">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-2 text-center">
-            <img src="img/question.svg" alt="" />
+        <div class="row col-12">
+          <div class="col-9 col-md-6 order-1">
+            <img src="img/about-us.svg" height="250px" alt="" />
           </div>
-          <div class="col-md-6 px-5 order-1">
-            <p id="section-title">Why us?</p>
-            <p id="section-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              totam sapiente natus omnis dolor deleniti eaque, neque vero
-              obcaecati at dolore quaerat iste inventore numquam, veritatis
-              quia! Culpa aliquid harum totam pariatur ullam ut tenetur unde
-              blanditiis odit minus! Quasi!
+          <div class="col-12 col-md-6 order-2" id="about-text-block">
+            <h2 class="display-5" id="about-title">About us</h2>
+            <hr id="about-underline" />
+            <p id="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              voluptatum non ducimus vel praesentium repudiandae aperiam itaque
+              nobis ea, eaque temporibus corrupti id laudantium, omnis
+              cupiditate adipisci consequatur dignissimos voluptate.
+            </p>
+            <p class="text-right" id="read-more">
+              <a id="read-more-link" href="about_us.html"> Read more</a>
+              <i class="fas fa-angle-right"></i>
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <div id="footer-curve">
-        <svg
-          id="footer-svg"
+      <svg
+          class="curves-svg"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1920 388.3"
+          viewBox="0 0 1920 62.5"
         >
           <path
-            d="M1920,288.3v100.1H0V0c250.3,56.3,1606.8,63.9,1919.6,0c0,62.2,0.8,120.7,0,146.5h0.3L1920,288.3L1920,288.3z"
-          ></path>
+            d="M0,62.5c104.8-23.1,262-51.3,454.3-60c261.8-11.9,428.6,19.6,609.6,36.1C1265.5,57,1555.1,63.2,1920,2.5c0,20,0,40,0,60
+          C1280,62.5,640,62.5,0,62.5z"
+          />
         </svg>
+    </div>
+
+    <!-- WHY US -->
+    <div id="why-us">
+      <div class="container">
+        <div class="row col-12">
+          <div class="col-9 col-md-5 order-lg-2 order-md-2">
+            <img src="img/question.svg"  height="250px" alt="" />
+          </div>
+          <div class="col-12 order-lg-1 order-md-1 col-md-7" id="why-text-block">
+            <h2 class="display-5" id="about-title">Why us?</h2>
+            <hr id="about-underline" />
+            <p id="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              voluptatum non ducimus vel praesentium repudiandae aperiam itaque
+              nobis ea, eaque temporibus corrupti id laudantium, omnis
+              cupiditate adipisci consequatur dignissimos voluptate.
+            </p>
+            <p class="text-right" id="read-more">
+              <a id="read-more-link" href="why_us.html"> Read more</a>
+              <i class="fas fa-angle-right"></i>
+            </p>
+          </div>
+          
+        </div>
+        
       </div>
-      <div id="contact-block">
-        <div class="container" id="contact-details">
-          <div class="row" >
-            <div class="col">
-              <h3>Contact Us</h3>
-            </div>
-          </div>
+      
+    </div>
 
-          <div class="row" >
-            <div class="col-sm-auto d-flex">
-              <img
-                src="img/icons/location_white.svg"
-                class="footer-icon"
-                alt=""
-              />
-              <p class="contact-field">Trade Tower</p>
-            </div>
-          </div>
-
-          <div class="row" >
-            <div class="col-sm-auto d-flex">
-              <img
-                src="img/icons/phone_white.svg"
-                class="footer-icon"
-                alt=""
-              />
-              <p class="contact-field">+977 9801208409</p>
-            </div>
-          </div>
-
-          <div class="row" >
-            <div class="col-sm-auto d-flex">
-              <img
-                src="img/icons/mail_white.svg"
-                class="footer-icon"
-                alt=""
-              />
-              <p class="contact-field">support@littlebuddynepal.com</p>
-            </div>
-          </div>
-
-          <div class="row" >
-            <div class="col text-center">
-              <p>&copy; <span id="year"></span>- Little Buddy PreSchool All Rights Reserved.</p>
-            </div>
-          </div>
-
-         
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div id="footer-curve">
+      <svg
+          class="curves-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 62.5"
+        >
+        <path class="st0" d="M1920,0c-364.9,60.7-654.5,61-856.1,42.6c-181-16.5-347.8-48-609.6-36.1C262,15.2,104.8,39.4,0,62.5V0H1920z"/>
+        </svg>
+    </div>
+    <div id="contact-block">
+      <div class="container" id="contact-details">
+        <div class="row" >
+          <div class="col">
+            <h3>Contact Us</h3>
           </div>
         </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-location-arrow"></i>
+            <p class="contact-field">Trade Tower</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-mobile"></i>
+            <p class="contact-field">+977 9801208409</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-envelope"></i>
+            <p class="contact-field">support@littlebuddynepal.com</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col text-center">
+            <p>&copy; <span id="year"></span>- Little Buddy PreSchool All Rights Reserved.</p>
+          </div>
+        </div>
+
+       
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      var toggleClick=0;
-      $(".navbar-toggler").click(function(){
-        $("nav").toggleClass("navbar-dropdown");
-     
-      });
-        //Get the current year for the copyright
-        $("#year").text(new Date().getFullYear());
-      // Add smooth scrolling
-      $("a").on("click", function (e) {
-        // Check for a hash value
-        if (this.hash !== "") {
-          // Prevent default behavior
-          e.preventDefault();
-
-          // Store hash
-          const hash = this.hash;
-
-          // Animate smooth scroll
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            500,
-            function () {
-              // Add hash to URL after scroll
-              window.location.hash = hash;
-            }
-          );
-        }
-      });
-    </script>
   </body>
 </html>

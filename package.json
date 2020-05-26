@@ -1,0 +1,16 @@
+{
+  "name": "training_portal",
+  "version": "1.0.0",
+  "description": "Little Buddy Training Portal",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/index.css -w"
+    
+   
+  },
+  "author": "Krennova",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
