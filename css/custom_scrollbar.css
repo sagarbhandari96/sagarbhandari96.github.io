@@ -1,0 +1,11 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  border: 7px solid black;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #e27115, #e2884a);
+  border-radius: 3px; }

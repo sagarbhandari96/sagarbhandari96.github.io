@@ -1,3 +1,30 @@
+@import "color_scheme";
 .footer{
-    background-color: red($color: #000000);
-}
+    
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+    background: linear-gradient(to bottom right, $color-primary, $color-light);
+  
+  .curves-svg{
+    
+    fill: $color-grey-dark;  
+    top: 0;
+   
+    }
+  
+    .contact-field{
+      padding-left: 10px;
+      transform: translateY(-5px);
+      
+    }
+  }   
+  #contact-block{
+    padding-top: 3rem;
+    color: white;
+  }
+  .footer-light-bar{
+      transform: translateY(15px);
+      border-radius: 1rem 1rem 0 0;
+      background-color: $color-primary-alpha;
+      height: 20px;
+  }

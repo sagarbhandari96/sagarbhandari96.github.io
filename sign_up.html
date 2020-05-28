@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/user_navbar.css" />
+    <link rel="stylesheet" href="css/log_in.css">
+    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+<body>
+
+ <!-- NAVBAR SECTION  -->
+ <div id="user-navbar"> 
+  
+  <div class="color-overlay">
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"
+        ><img src="img/logo.svg" height="60px" alt="Little Buddy Logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="log_in.html">
+              <button class="btn">Log In</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+</div>
+<div class="color-overlay-1">  
+</div> 
+</div>
+  
+ 
+  <!-- FORM SECTION  -->
+  <div class="container" id="form-card">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-10" >
+        <div class="card text-center" id="form-section">
+          <img
+            class="card-img-top"
+            src="img/icons/new_account.svg"
+            alt="Card image cap"
+            height="75px"
+            width="75px"
+          />
+          <div class="card-body justify-content-center">
+            <h3 class="card-title">Create New Account</h3>
+
+            <form class="form-inline  justify-content-center" action="">
+              <!-- Name and mobile  -->
+              <div class="form-row col-lg-12">
+                
+              <div class="form-group text-left col-12 col-md-6  input-field">
+               
+                <input
+                type="text"
+                class="form-control  mx-auto"
+                
+                id="name"
+                autocomplete="off"
+                required
+              />
+              <label for="name" class="form-label text-left"
+              >
+              <span class="content-name">Name</span> 
+              
+              </label
+            >       
+                          
+             </div>
+             <div class="form-group text-left col-12 col-md-6 input-field" >
+               
+              <input
+              type="text"
+              class="form-control mx-auto"
+              
+              name="mobile"
+              autocomplete="off"
+              required
+            />
+            <label for="mobile" class="form-label text-left"
+            >
+            <span class="content-name">Mobile</span> 
+            
+            </label
+          >       
+                        
+           </div>
+          </div>  
+          
+        <!-- EMAIL  -->
+        <div class="form-row col-lg-12" id="email-field">
+                
+          <div class="form-group text-left col-12 input-field">
+           
+            <input
+            type="text"
+            class="form-control  mx-auto"
+            
+            id="email"
+            autocomplete="off"
+            required
+          />
+          <label for="name" class="form-label text-left"
+          >
+          <span class="content-name">Email</span> 
+          
+          </label
+        >       
+                      
+         </div>
+         
+      </div> 
+         
+         
+
+          <!-- dob/gender  -->
+          <div class="form-row col-lg-12" id="dob-gender">
+                
+            <div class="form-group text-left col-12 col-md-6  input-field">
+             
+              <input
+              type="date"
+              class="form-control  mx-auto"
+              
+              id="name"
+              autocomplete="off"
+              required
+            />
+            <label for="name" class="form-label text-left"
+            >
+            <span class="label-persistent">Date Of Birth</span> 
+            
+            </label
+          >       
+                        
+           </div>
+           <div class="form-group text-left col-12 col-md-6  input-field">
+             
+            <select class="form-control" id="gender">
+              <option selected>Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          <label for="gender" class="form-label text-left"
+          >
+          <span class="label-persistent">Gender</span> 
+          
+          </label
+        >       
+                      
+         </div>
+        </div>  
+
+        <!-- reasons for joining -->
+         
+         <div class="form-row col-lg-12" id="reasons-field">
+                
+          <div class="form-group text-left col-12 ">
+           
+            <textarea name="" id="reason-for-joining"
+            placeholder="Explain why you want to join this platform in under 200 words..."
+            rows="8" class="form-control"></textarea>
+          <label for="reasons" class="form-label text-left" id="textarea-label"
+          >
+          <span id="textarea-span">Reasons for joining</span> 
+          
+          </label>       
+                      
+         </div>
+         
+        </div> 
+
+        <div id="captcha">
+          Captcha area
+        </div>
+        
+        <div class="form-row col-lg-12 col-12 " id="terms-cdns">
+        <div class="form-group h-50">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              I agree to the 
+            </label>
+            <span id="link-text"> Terms and Conditions</span> 
+          </div>
+        </div>
+      </div>
+                  
+        
+              
+            </form>
+            
+            
+            <a class="" href="#"
+              ><button class="btn btn-register" id="log-in-btn">
+                Create Account
+              </button></a
+            >
+           
+
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- FOOTER SECTION -->
+   <div class="footer-light-bar">
+      
+  </div>
+   <div class="footer">
+    
+    <div id="contact-block">
+      <div class="container" id="contact-details">
+        <div class="row" >
+          <div class="col">
+            <h3>Contact Us</h3>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-location-arrow"></i>
+            <p class="contact-field">Trade Tower</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-mobile"></i>
+            <p class="contact-field">+977 9801208409</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-envelope"></i>
+            <p class="contact-field">support@littlebuddynepal.com</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col text-center">
+            <p>&copy; <span id="year"></span>- Little Buddy PreSchool All Rights Reserved.</p>
+          </div>
+        </div>
+
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

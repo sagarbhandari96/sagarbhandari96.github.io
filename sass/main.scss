@@ -1,15 +1,9 @@
-
-$color-primary: #e27115;
-$color-light: #e2884a;
-$color-grey-dark: #e0e0e0;
-$color-grey-light:#f7f7f7;
-$color-primary-muted:#f7a269;
-
-$grey-text: #949494;
+@import "color_scheme";
 
 $header-height: 600px;
 
 $float-animation: 40s;
+$float-animation-2: 60s;
 
 $navbar-z-index: 3;
 $curves-z-index: 2;
@@ -156,20 +150,28 @@ body {
   position: absolute;
   height: 200px;
   z-index: 2;
-  animation: float-circle2 $float-animation infinite;
+  animation: float-circle2 $float-animation-2 infinite;
 }
 @keyframes float-circle2 {
   0% {
     animation-timing-function: linear;
-    transform: translate3d(30vw, 230px, 0vw);
+    transform: translate3d(-15vw, 0vw, 0vw);
+  }
+  25% {
+    animation-timing-function: linear;
+    transform: translate3d(30vw, 30vw, 0vw);
   }
   50% {
     animation-timing-function: linear;
-    transform: translate3d(30vw, 0vw, 0vw);
+    transform: translate3d(40vw, 0vw, 0vw);
+  }
+  75% {
+    animation-timing-function: linear;
+    transform: translate3d(30vw, 30vw, 0vw);
   }
   100% {
     animation-timing-function: linear;
-    transform: translate3d(30vw, 230px, 0vw);
+    transform: translate3d(-15vw, 0vw, 0vw);
   }
 }
 
@@ -192,10 +194,7 @@ body {
   border-radius: 50px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.28);
 }
-#our-services .curves-svg{
-  fill: $color-primary-muted;
-  bottom: 0;
-}
+
 
 
 
@@ -206,7 +205,7 @@ body {
 #about-us {
  position: relative;
   
-  background-color: $color-primary-muted;
+  background-color: $color-grey-dark;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -230,10 +229,7 @@ body {
   transition: box-shadow 0.5s ease-out;
   transition: transform 0.1s ease-out;
 }
-#about-us .curves-svg{
-  fill: $color-grey-light;
-  bottom: 0;
-}
+
 #about-us #about-text-block:hover {
   // background-image: linear-gradient(
   //   to bottom right,
@@ -350,15 +346,3 @@ footer .curves-svg{
 
 
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  border: 7px solid black;
-  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom right, $color-primary, $color-light);
-  border-radius: 3px;
-}

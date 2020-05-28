@@ -1,2 +1,20 @@
 .footer {
-  background-color: 0; }
+  position: relative;
+  border-radius: 1rem 1rem 0 0;
+  background: linear-gradient(to bottom right, #e27115, #e2884a); }
+  .footer .curves-svg {
+    fill: #e0e0e0;
+    top: 0; }
+  .footer .contact-field {
+    padding-left: 10px;
+    transform: translateY(-5px); }
+
+#contact-block {
+  padding-top: 3rem;
+  color: white; }
+
+.footer-light-bar {
+  transform: translateY(15px);
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fab689bb;
+  height: 20px; }

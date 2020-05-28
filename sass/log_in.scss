@@ -1,0 +1,106 @@
+@import "color_scheme";
+
+body{
+    background-color: $color-grey-dark;
+}
+
+#form-card {
+    // z-index: -1;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  #form-card .card {
+    border: 2px solid $color-primary-muted;
+    border-radius: 25px;
+   
+  }
+  #form-section .card-body {
+    padding-top: 0.5rem;
+  }
+  #form-section .card-img-top {
+    margin-top: 5vh;
+  }
+  #form-section .card-title {
+    color: $color-form-primary;
+    padding-bottom: 1rem;
+  }
+  #form-section .form-group {
+    width: 100%;
+    height: 4rem;
+    /* margin: auto; */
+  }
+  #form-section .form-control {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .form-label {
+    padding-left: 0.75rem;
+    pointer-events: none;
+  }
+  .input-field {
+    padding-bottom: 1rem;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  .form-label {
+    position: absolute;
+    height: 100%;
+  }
+  .content-name {
+    color: #727272;
+    transition: 0.2s ease-out;
+  }
+  .form-control:focus + .form-label .content-name,
+  input:valid + .form-label .content-name {
+    opacity: 100%;
+    transform: translateY(-2rem);
+    font-size: 0.9rem;
+    color: $color-form-primary;
+  }
+  
+  #log-in-btn {
+    width: 50%;
+  }
+  #link-text {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    /* padding-right: 1.75rem; */
+    font-weight: 600;
+    color: $color-form-primary;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: $color-form-strong;
+  }
+
+  #log-in-btn{
+      background-color: $color-form-primary!important;
+      color: white;
+      border-radius: 2rem;
+  }
+  #log-in-btn:hover{
+    background-color: $color-form-strong!important;
+  }
+
+
+  
+  @media (max-width: 576px) {
+    .form-label {
+      transform: translateY(-4rem);
+    }
+    .content-name {
+      color: #727272;
+      transition: 0.2s ease-out;
+    }
+    .form-control:focus + .form-label .content-name,
+    input:valid + .form-label .content-name {
+      transform: translateY(-4rem);
+      font-size: 0.9rem;
+      color: #ff7c00;
+    }
+  }
+  
