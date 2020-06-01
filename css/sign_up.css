@@ -44,6 +44,8 @@
 #link-text {
   padding-left: 0.3rem;
   transform: translateY(-0.2rem); }
+  #link-text a {
+    color: #ff7c00; }
 
 .navbar-nav button {
   border-radius: 2rem !important;

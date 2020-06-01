@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply for training</title>
+    <title>Apply for relocation</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -93,8 +93,22 @@
           <div class="container">
 
             <div class="px-4">
-              <h3 class="card-title text-left">Please fill up the following form</h3>
-               <p class="text-left card-subtitle">Some fields will be filled up automatically based on your selection</p>
+              <h3 class="card-title text-left">Please set a preferred location</h3>
+               <p class="text-left card-subtitle">Note: A candidate must have completed at least a year on current location.</p>
+            </div>
+          </div>
+
+          <div class="d-flex container text-left px-5 py-3 flex-row profile-block">
+            <div >
+                <img src="img/profile_pic.png" class="profile-pic" height="100px" alt="">
+            </div>
+            <div class="profile-desc flex-column">
+                <div class="user-name">
+                    John Doe
+                </div>
+                <div class="location-block">
+                    User's current location: <span class="user-location">Bhaktapur</span>
+                </div>
             </div>
           </div>
          
@@ -102,118 +116,30 @@
 
           <div class="card-body justify-content-center">
 
-            <form class="form-inline  justify-content-center" action="">
-           
-
-          
-        <div class="form-row col-lg-12" id="dob-gender">
-            <div class="form-group text-left col-12 col-md-6  input-field">
+            <form class="form-inline  justify-content-center" action="">      
+                <!-- PREFFERED LOCATION  -->
+        <div class="form-row col-lg-12" id="email-field">
+                
+            <div class="form-group text-left col-12 input-field">
              
-                <select class="form-control" id="gender">
-                  <option selected>Select...</option>
-                  <option value="male">Training 1</option>
-                  <option value="female">Training 2</option>
-                  <option value="other">Training 3</option>
-                </select>
-              <label for="gender" class="form-label text-left"
-              >
-              <span class="label-persistent">Type of training</span> 
+              <input
+              type="text"
+              class="form-control  mx-auto"
               
-              </label
-            >       
-                          
-             </div> 
-             <div class="form-group text-left col-12 col-md-6  input-field">
-               
-                <input
-                type="text"
-                class="form-control  mx-auto"
-                
-                id="name"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form-label text-left"
-              >
-              <span class="content-name">Duration of training</span> 
-              
-              </label
-            >       
-                          
-             </div>
+              id="email"
+              autocomplete="off"
+              required
+            />
+            <label for="name" class="form-label text-left"
+            >
+            <span class="content-name">Set a location</span> 
+            
+            </label
+          >       
+                        
+           </div>
            
-        </div>  
-
-        <div class="form-row col-lg-12" >
-            <div class="form-group text-left col-12 col-md-6  input-field">
-               
-                <input
-                type="text"
-                class="form-control  mx-auto"
-                
-                id="name"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form-label text-left"
-              >
-              <span class="content-name">Training Instructor</span> 
-              
-              </label
-            >       
-                          
-             </div>
-             <div class="form-group text-left col-12 col-md-6  input-field">
-               
-                <input
-                type="text"
-                class="form-control  mx-auto"
-                
-                id="name"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form-label text-left"
-              >
-              <span class="content-name">View available timing slots</span> 
-              
-              </label
-            >       
-                          
-             </div>
-           
-        </div>  
-
-        <div class="d-flex flex-column upload-section px-3 my-3">
-            <div class="upload-icon">
-            <i class="fas fa-cloud-upload-alt fa-2x"></i>
-        </div>
-            Upload CV
-        </div>
-
-        <!-- reasons for applying -->
-         
-         <div class="form-row col-lg-12" id="reasons-field">
-                
-          <div class="form-group text-left col-12 ">
-           
-            <textarea name="" id="reason-for-joining"
-            placeholder="Explain why you want to join this training in under 200 words..."
-            rows="8" class="form-control"></textarea>
-          <label for="reasons" class="form-label text-left" id="textarea-label"
-          >
-          <span id="textarea-span">Reasons for applying</span> 
-          
-          </label>       
-                      
-         </div>
-         
-        </div> 
-
-        
-        
-        
-                  
+        </div>   
         
               
             </form>
@@ -221,7 +147,7 @@
             
             <a class="" href="#"
               ><button class="btn btn-register" id="log-in-btn">
-                Apply
+                Confirm
               </button></a
             >
            

@@ -18,3 +18,18 @@
 
 .upload-section:hover {
   transform: translateY(-0.2rem); }
+
+.profile-block {
+  margin-top: 2rem; }
+  .profile-block .profile-pic {
+    border-radius: 1rem; }
+  .profile-block .profile-desc {
+    margin-left: 1rem; }
+    .profile-block .profile-desc .user-name {
+      color: #fc8931;
+      font-size: 1.3rem;
+      font-weight: 600; }
+    .profile-block .profile-desc .location-block {
+      color: #6e6e6e; }
+      .profile-block .profile-desc .location-block .user-location {
+        font-weight: 600; }

@@ -20,3 +20,28 @@
 .upload-section:hover{
     transform: translateY(-.2rem);
 }
+
+.profile-block{
+    margin-top: 2rem;
+
+    .profile-pic{
+        border-radius: 1rem;
+    }
+    .profile-desc{
+        margin-left: 1rem;
+    
+    .user-name{
+        color: $color-form-primary;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .location-block{
+        color: $grey-text-dark;
+        .user-location{
+            font-weight: 600;
+        }
+    }
+    }
+}
+
+
