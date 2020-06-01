@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,7 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/user_navbar.css" />
-    <link rel="stylesheet" href="css/client_sub_pages.css">
+    
+    <link rel="stylesheet" href="css/contact_us.css">
     <link rel="stylesheet" href="css/footer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -73,24 +74,126 @@
     </div> 
  </div>
   
-  <!-- DESCRIPTION SECTION  -->
-  <div class="container">
-      <div class="description-box mx-auto">
-        <div class="title">
-            About Us
-        </div>
-        <hr class="title-underline mr-auto">
-        <div class="container">
-        <div class="description-text mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste ea porro perspiciatis veritatis cum ullam tempore ipsum, id voluptatem tempora obcaecati corporis dolorem alias sed animi explicabo, reiciendis veniam excepturi consectetur aspernatur. Ipsum perferendis quae quo assumenda consectetur illo! <br><br>
-            Odit laborum ab sapiente nisi asperiores possimus velit qui, et repellat atque assumenda quos minima, in laudantium dignissimos corporis rerum nesciunt consequatur! Quod officia dolorem, nobis quia neque amet temporibus nulla deserunt laudantium nesciunt quas mollitia dolor obcaecati tenetur hic. A, tenetur laborum? <br><br> Sint consectetur ea voluptatem, necessitatibus et officiis vero, neque porro maiores laboriosam itaque facilis quas saepe iusto?
-        </div>
-        <div class="d-flex justify-content-center vector-img">
-            <img src="img/about-us.svg" height="250vw" alt="">
-        </div>
-    </div>
-      </div>      
-  </div>
+  <!-- CONTACT US SECTION  -->
+  <div class="container my-5">
+      <div class="row col-12">
+          <div class="col-lg-4 my-2" id="contact-info-sidebar">
+              <!-- ADDRESS  -->
+            <div class="row d-flex flex-column text-center contact-bar-row">
+                <div class="contact-bar-icon">
+                <i class="fas fa-location-arrow"></i>
+                </div>
+                <div class="contact-bar-title">
+                    Address
+                </div>
+                <div class="contact-bar-desc">
+                    Thapathali, Kathmandu
+                </div>
+            </div>
+
+            <!-- PHONE -->
+            <div class="row d-flex flex-column text-center contact-bar-row">
+                <div class="contact-bar-icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <div class="contact-bar-title">
+                    Phone
+                </div>
+                <div class="contact-bar-desc">
+                    +977 9801208409
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="row d-flex flex-column text-center contact-bar-row">
+                <div class="contact-bar-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-bar-title">
+                    Email
+                </div>
+                <div class="contact-bar-desc">
+                    support@littlebuddynepal.com
+                </div>
+            </div>
+
+          </div>
+          <div class="col-lg-7 my-2" id="contact-form">
+            <div class="contact-form-title">
+                Get in touch
+            </div>
+            <hr class="title-underline mr-auto">
+
+            <form class="form-inline  justify-content-center" action="">
+               <!-- EMAIL  -->
+              <div class="form-row col-lg-12" id="email-field">
+                
+              <div class="form-group text-left col-8 input-field">
+             
+              <input
+              type="text"
+              class="form-control  mx-auto"
+              
+              id="email"
+              autocomplete="off"
+              required
+            />        
+              <label for="name" class="form-label text-left"
+            >
+              <span class="content-name">Full Name</span> 
+            
+            </label
+          >       
+                        
+           </div>
+
+           <div class="form-group text-left col-12 input-field">
+             
+            <input
+            type="text"
+            class="form-control  mx-auto"
+            
+            id="email"
+            autocomplete="off"
+            required
+          />
+            <label for="name" class="form-label text-left"
+          >
+            <span class="content-name">Email</span> 
+          
+          </label
+        >       
+                      
+         </div>
+           
+        </div>  
+
+        <!-- reasons for joining -->
+         
+        <div class="form-row col-lg-12" id="message-field">
+                
+          <div class="form-group text-left col-12 ">
+           
+            <textarea name="" id="reason-for-joining"
+            placeholder="Message..."
+            rows="8" class="form-control"></textarea>
+              
+                      
+         </div>
+         
+        </div> 
+            </form>
+            <div class="d-flex justify-content-center">
+            <a class="" href="#"
+              ><button class="btn btn-register mx-auto" id="contact-btn">
+                Send
+              </button></a
+            >
+          </div>
+          </div>
+      </div>
+  </div>      
+  
 
    <!-- FOOTER SECTION -->
    <div class="footer-light-bar">

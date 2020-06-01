@@ -1,0 +1,22 @@
+@import "color_scheme";
+.card-title{
+    margin-top: 1rem;
+    padding-bottom: 0rem!important;
+    margin-bottom: .5rem;
+}
+.card-subtitle{
+    color: $grey-text-dark;
+}
+.upload-section{
+    color: $color-primary;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: 1px solid $color-grey-dark;
+   border-radius: 0.5rem;
+   cursor: pointer;
+   box-shadow: 3px 3px 3px 2px $color-grey-light;
+   transition: 0.1s transform ease-out;
+}
+.upload-section:hover{
+    transform: translateY(-.2rem);
+}

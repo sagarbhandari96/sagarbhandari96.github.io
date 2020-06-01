@@ -1,0 +1,100 @@
+@import "color_scheme";
+
+body {
+    background-color: $color-grey-dark;
+    font-family: "Roboto", sans-serif; }
+
+#contact-info-sidebar,#contact-form{
+    background-color: $color-grey-light;
+    border-radius: 1rem;
+    
+}
+#contact-form{
+    margin-left:1.5rem ;
+    width: 95%;
+}
+
+.contact-bar-row{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .contact-bar-icon{
+        
+        color: $color-primary;
+        font-size: 2rem;
+
+        transition: 0.2s transform ease-out;
+    }
+    .contact-bar-title{
+        color: $grey-text-darker;
+        font-size: 1.3rem;
+        font-weight: 600;
+
+    }
+    .contact-bar-desc{
+        color: $grey-text-dark;
+        padding-top: .3rem;
+    }
+}
+
+.contact-bar-row:hover .contact-bar-icon{
+    transform: translateY(-0.5rem);
+}
+
+.contact-form-title{
+  
+    color: $color-primary;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+.title-underline{
+    margin-top: 0rem;
+    border: 2px solid $color-primary;
+    width: 130px;
+    margin-left: 1.5rem;
+    transition: 0.2s width ease-out;
+   
+    }
+
+#contact-form:hover .title-underline{
+    width: 145px;
+}
+
+.form-control{
+    width: 100%!important;
+    margin-top: 1rem;
+    
+
+}
+
+.form-label .content-name{
+    padding-left: .5rem;
+    transform: translateY(-2rem);
+    color: $grey-text;
+    transition: .2s transform ease-out;
+}
+
+.form-control:focus + .form-label .content-name,
+input:valid + .form-label .content-name {
+  opacity: 100%;
+  transform: translateY(-4rem);
+  font-size: 0.9rem;
+  color: $color-form-primary;
+}
+
+#message-field {
+    transform: translateY(-1rem);
+    height: 250px;
+  }
+
+  #contact-btn{
+    background-color: $color-form-primary!important;
+    color: white;
+    width: 150%;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+#contact-btn:hover{
+  background-color: $color-form-strong!important;
+}

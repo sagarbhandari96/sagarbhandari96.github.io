@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/user_navbar.css" />
+    <link rel="stylesheet" href="css/user_dashboard.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR SECTION  -->
+ <div id="user-navbar"> 
+  
+      <div class="color-overlay">
+        
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.svg" height="60px" alt="Little Buddy Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  ><i class="far fa-bell nav-icons"></i>
+                  <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                <i class="far fa-user-circle nav-icons"></i>
+                  User Name
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Account settings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+    <div class="color-overlay-1">  
+    </div> 
+ </div>
+  
+  <!-- DESCRIPTION SECTION  -->
+  <div class="container">
+    <div class="ml-auto dash-buttons" >
+        <a class="" href="apply_training.html"
+        ><button class="btn btn-apply"> 
+          <img src="img/icons/apply training-white.svg" height="40px" alt=""> 
+          <div  id="btn-text">
+            Apply for training
+          </div> 
+        </button></a
+      > 
+
+      <a class="" href="#"
+        ><button class="btn btn-apply"> 
+          <img src="img/icons/relocation-white.svg" height="40px" alt=""> 
+          <div  id="btn-text">
+            Apply for relocation
+          </div> 
+        </button></a
+      > 
+      </div>  
+
+      <div class="announcement-box ">
+        <div class="title">
+            Announcements
+        </div>
+        <hr class="title-underline mr-auto">
+        <div class="container">
+            <!-- ANNOUNCEMENT 1 -->
+            <div class="ann-container py-2">
+                <div class="title-1">
+                  Announcement title
+                </div>
+                <div class="d-flex">
+                  <div class="title-2">Published on: </div>
+                  <div class="ann-date">
+                    2077/1/23
+                  </div>
+                </div>
+                
+                <div class="ann-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                  veritatis, eius possimus provident laboriosam fugit.
+                </div> 
+                <a href="announcement.html">
+                <div class="view-details text-center">
+                  View details
+                  <hr id="view-details-hr"> 
+                </div> 
+              </a>
+                <hr id="ann-hr">             
+              </div>
+              <!-- ANNOUNCEMENT 2 -->
+              <div class="ann-container py-2">
+                <div class="title-1">
+                  Announcement title
+                </div>
+                <div class="d-flex">
+                  <div class="title-2">Published on: </div>
+                  <div class="ann-date">
+                    2077/1/23
+                  </div>
+                </div>
+                
+                <div class="ann-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                  veritatis, eius possimus provident laboriosam fugit.
+                </div> 
+                <a href="announcement.html">
+                <div class="view-details text-center">
+                  View details
+                  <hr id="view-details-hr"> 
+                </div> 
+              </a>
+                <hr id="ann-hr">             
+              </div>
+        
+        
+        </div>
+      </div>   
+      
+      <!-- STATUS BOX -->
+      <div class="announcement-box ">
+        <div class="title">
+            Your application status
+        </div>
+        <hr class="status-underline mr-auto" >
+        <div class="container">
+            <!-- STATUS 1 -->
+            <div class="ann-container py-2">
+                <div class="title-1">
+                  Training Name
+                  
+                </div>
+                
+                
+                <div class="d-flex">
+                    <div class="title-2">Application no.: 
+                      <span class="ann-date">
+                        1234
+                      </span>
+                    </div>
+                    <div class="application-status">
+                      <span class="badge badge-secondary">On hold</span>
+                    </div>
+                    
+                  </div>
+                
+                
+                
+                
+                <a href="application_status.html">
+                <div class="view-details text-center">
+                  View details
+                  <hr id="view-details-hr"> 
+                </div> 
+              </a>
+                <hr id="ann-hr">             
+            </div>
+              <!-- STATUS 2 -->
+              <div class="ann-container py-2">
+                <div class="title-1">
+                  Training Name
+                  
+                </div>
+                
+                
+                <div class="d-flex">
+                    <div class="title-2">Application no.: 
+                      <span class="ann-date">
+                        1234
+                      </span>
+                    </div>
+                    <div class="application-status">
+                      <span class="badge badge-success">Approved</span>
+                    </div>
+                    
+                  </div>
+                
+                
+                
+                
+                  <a href="application_status.html">
+                <div class="view-details text-center">
+                  View details
+                  <hr id="view-details-hr"> 
+                </div> 
+                </a>
+                <hr id="ann-hr">             
+            </div>
+        
+        
+        </div>
+      </div>   
+  </div>
+
+   <!-- FOOTER SECTION -->
+   <div class="footer-light-bar">
+      
+  </div>
+   <div class="footer">
+    
+    <div id="contact-block">
+      <div class="container" id="contact-details">
+        <div class="row" >
+          <div class="col">
+            <h3>Contact Us</h3>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-location-arrow"></i>
+            <p class="contact-field">Trade Tower</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-mobile"></i>
+            <p class="contact-field">+977 9801208409</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col-sm-auto d-flex">
+            <i class="fas fa-envelope"></i>
+            <p class="contact-field">support@littlebuddynepal.com</p>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col text-center">
+            <p>&copy; <span id="year"></span>- Little Buddy PreSchool All Rights Reserved.</p>
+          </div>
+        </div>
+
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

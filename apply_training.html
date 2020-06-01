@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Apply for training</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/user_navbar.css" />
     <link rel="stylesheet" href="css/log_in.css">
     <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="css/apply_training.css">
     <link rel="stylesheet" href="css/footer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -25,53 +26,62 @@
  <!-- NAVBAR SECTION  -->
  <div id="user-navbar"> 
   
-  <div class="color-overlay">
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"
-        ><img src="img/logo.svg" height="60px" alt="Little Buddy Logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about_us.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="contact_us.html">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="log_in.html">
-              <button class="btn">Log In</button></a
-            >
-          </li>
-        </ul>
+    <div class="color-overlay">
+      
+  <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.svg" height="60px" alt="Little Buddy Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="far fa-bell nav-icons"></i>
+                <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              <i class="far fa-user-circle nav-icons"></i>
+                User Name
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Account settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-</div>
-<div class="color-overlay-1">  
-</div> 
+    </nav>
+    
+  </div>
+  <div class="color-overlay-1">  
+  </div> 
 </div>
   
  
@@ -80,18 +90,20 @@
     <div class="row justify-content-center">
       <div class="col-lg-7 col-10" >
         <div class="card text-center" id="form-section">
-          <img
-            class="card-img-top"
-            src="img/icons/new_account.svg"
-            alt="Card image cap"
-            height="75px"
-            width="75px"
-          />
+          <div class="container">
+
+            <div class="px-4">
+              <h3 class="card-title text-left">Please fill up the following form</h3>
+               <p class="text-left card-subtitle">Some fields will be filled up automatically based on your selection</p>
+            </div>
+          </div>
+         
+         
+
           <div class="card-body justify-content-center">
-            <h3 class="card-title">Create New Account</h3>
 
             <form class="form-inline  justify-content-center" action="">
-              <!-- Name and mobile  -->
+              <!-- Name and mobile 
               <div class="form-row col-lg-12">
                 
               <div class="form-group text-left col-12 col-md-6  input-field">
@@ -132,7 +144,7 @@
            </div>
           </div>  
           
-        <!-- EMAIL  -->
+        EMAIL 
         <div class="form-row col-lg-12" id="email-field">
                 
           <div class="form-group text-left col-12 input-field">
@@ -154,61 +166,108 @@
                       
          </div>
          
-      </div> 
+      </div>  -->
          
          
 
           <!-- dob/gender  -->
-          <div class="form-row col-lg-12" id="dob-gender">
-                
+        <div class="form-row col-lg-12" id="dob-gender">
             <div class="form-group text-left col-12 col-md-6  input-field">
              
-              <input
-              type="date"
-              class="form-control  mx-auto"
+                <select class="form-control" id="gender">
+                  <option selected>Select...</option>
+                  <option value="male">Training 1</option>
+                  <option value="female">Training 2</option>
+                  <option value="other">Training 3</option>
+                </select>
+              <label for="gender" class="form-label text-left"
+              >
+              <span class="label-persistent">Type of training</span> 
               
-              id="name"
-              autocomplete="off"
-              required
-            />
-            <label for="name" class="form-label text-left"
-            >
-            <span class="label-persistent">Date Of Birth</span> 
-            
-            </label
-          >       
-                        
-           </div>
-           <div class="form-group text-left col-12 col-md-6  input-field">
-             
-            <select class="form-control" id="gender">
-              <option selected>Select...</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          <label for="gender" class="form-label text-left"
-          >
-          <span class="label-persistent">Gender</span> 
-          
-          </label
-        >       
-                      
-         </div>
+              </label
+            >       
+                          
+             </div> 
+             <div class="form-group text-left col-12 col-md-6  input-field">
+               
+                <input
+                type="text"
+                class="form-control  mx-auto"
+                
+                id="name"
+                autocomplete="off"
+                required
+              />
+              <label for="name" class="form-label text-left"
+              >
+              <span class="content-name">Duration of training</span> 
+              
+              </label
+            >       
+                          
+             </div>
+           
         </div>  
 
-        <!-- reasons for joining -->
+        <div class="form-row col-lg-12" >
+            <div class="form-group text-left col-12 col-md-6  input-field">
+               
+                <input
+                type="text"
+                class="form-control  mx-auto"
+                
+                id="name"
+                autocomplete="off"
+                required
+              />
+              <label for="name" class="form-label text-left"
+              >
+              <span class="content-name">Training Instructor</span> 
+              
+              </label
+            >       
+                          
+             </div>
+             <div class="form-group text-left col-12 col-md-6  input-field">
+               
+                <input
+                type="text"
+                class="form-control  mx-auto"
+                
+                id="name"
+                autocomplete="off"
+                required
+              />
+              <label for="name" class="form-label text-left"
+              >
+              <span class="content-name">View available timing slots</span> 
+              
+              </label
+            >       
+                          
+             </div>
+           
+        </div>  
+
+        <div class="d-flex flex-column upload-section px-3 my-3">
+            <div class="upload-icon">
+            <i class="fas fa-cloud-upload-alt fa-2x"></i>
+        </div>
+            Upload CV
+        </div>
+
+        <!-- reasons for applying -->
          
          <div class="form-row col-lg-12" id="reasons-field">
                 
           <div class="form-group text-left col-12 ">
            
             <textarea name="" id="reason-for-joining"
-            placeholder="Explain why you want to join this platform in under 200 words..."
+            placeholder="Explain why you want to join this training in under 200 words..."
             rows="8" class="form-control"></textarea>
           <label for="reasons" class="form-label text-left" id="textarea-label"
           >
-          <span id="textarea-span">Reasons for joining</span> 
+          <span id="textarea-span">Reasons for applying</span> 
           
           </label>       
                       
@@ -216,21 +275,9 @@
          
         </div> 
 
-        <div id="captcha">
-          Captcha area
-        </div>
         
-        <div class="form-row col-lg-12 col-12 " id="terms-cdns">
-        <div class="form-group h-50">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              I agree to the 
-            </label>
-            <span id="link-text"> Terms and Conditions</span> 
-          </div>
-        </div>
-      </div>
+        
+        
                   
         
               
@@ -239,7 +286,7 @@
             
             <a class="" href="#"
               ><button class="btn btn-register" id="log-in-btn">
-                Create Account
+                Apply
               </button></a
             >
            

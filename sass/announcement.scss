@@ -1,0 +1,73 @@
+@import "color_scheme";
+
+
+@import "color_scheme";
+
+body{
+    background-color: $color-grey-dark;
+    font-family: "Roboto", sans-serif;
+}
+.description-box{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: $color-grey-light;
+    border-radius: 2rem;
+    
+    width: 80%;
+ .title{
+        color: $color-primary;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        font-size: 1.5rem;
+
+    }
+ .title-underline{
+    margin-top: 0rem;
+    border: 2px solid $color-primary;
+    width: 12vw;
+    margin-left: 1.5rem;
+    transition: 0.2s width ease-out;
+   
+    }
+    .description-text{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        width: 90%;
+        padding-bottom: 1.5rem;
+        color: $grey-text;
+    }
+
+   
+}
+
+.description-box:hover .title-underline{
+    width: 13vw;
+}
+
+.back-dash a{
+    color: $color-primary;
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+.ann-title{
+    font-size: 1.5rem;
+    color: $color-primary;
+}
+
+.published,.ann-date{
+    color: $grey-text-dark;
+    padding-top: .5rem;
+}
+
+.published{
+    font-weight: 600;
+}
+.ann-date{
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+}
+
