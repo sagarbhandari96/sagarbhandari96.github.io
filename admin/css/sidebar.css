@@ -1,0 +1,33 @@
+body {
+  background-color: #f7f7f7; }
+
+.sidebar {
+  position: fixed;
+  background-color: #e27115;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  white-space: nowrap; }
+  .sidebar .lbp-logo .logo-svg {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    border-radius: 1rem; }
+  .sidebar .sidebar-components {
+    margin-left: 1rem; }
+    .sidebar .sidebar-components a {
+      text-decoration: none;
+      color: #f7f7f7; }
+    .sidebar .sidebar-components li {
+      margin-top: 1.5rem; }
+    .sidebar .sidebar-components .highlight {
+      padding: 10px 30px 10px 5px;
+      border-radius: 1rem;
+      transition: 0.2s all ease-out; }
+    .sidebar .sidebar-components .active-page .highlight {
+      background-color: #f7f7f7;
+      color: #e27115; }
+    .sidebar .sidebar-components .highlight:hover {
+      background-color: #f7a269;
+      color: white; }

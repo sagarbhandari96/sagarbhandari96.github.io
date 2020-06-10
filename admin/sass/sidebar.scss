@@ -1,0 +1,48 @@
+@import "../../sass/color_scheme";
+
+body {
+  background-color: $color-grey-light;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: $color-primary;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  white-space: nowrap;
+  .lbp-logo {
+    .logo-svg {
+      cursor: pointer;
+      background-color: $color-grey-light;
+
+      margin-top: 10px;
+      border-radius: 1rem;
+    }
+  }
+
+  .sidebar-components {
+    margin-left: 1rem;
+    a {
+      text-decoration: none;
+      color: $color-grey-light;
+    }
+    li {
+      margin-top: 1.5rem;
+    }
+    .highlight {
+      padding: 10px 30px 10px 5px;
+      border-radius: 1rem;
+      transition: 0.2s all ease-out;
+    }
+    .active-page .highlight {
+      background-color: $color-grey-light;
+      color: $color-primary;
+    }
+    .highlight:hover {
+      background-color: $color-primary-muted;
+      color: white;
+    }
+  }
+}
