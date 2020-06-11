@@ -1,0 +1,27 @@
+@import "../../sass/color_scheme";
+@import "variables";
+
+.navbar {
+  margin-left: $sidebarWidth;
+  height: 60px;
+  box-shadow: 0px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  .nav-current-page {
+    padding-left: 1.5rem;
+    font-weight: 600;
+  }
+}
+.notif-icon {
+  color: $color-primary;
+  margin-top: 0.5rem;
+}
+
+#navbarDropdown {
+  color: $color-primary;
+}
+
+.dropdown-item {
+  color: $color-primary;
+  &:hover {
+    color: $color-form-primary;
+  }
+}

@@ -1,0 +1,15 @@
+.card {
+  box-shadow: 0px 7px 10px -6px #e0e0e0;
+  border-radius: 0.5rem; }
+
+.card-title {
+  color: #e27115; }
+
+.card-name {
+  color: #7e7e7e; }
+
+.time-elapsed {
+  color: #7e7e7e; }
+
+.activity-icon {
+  color: #e27115; }

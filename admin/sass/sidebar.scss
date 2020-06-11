@@ -1,4 +1,5 @@
 @import "../../sass/color_scheme";
+@import "variables";
 
 body {
   background-color: $color-grey-light;
@@ -9,8 +10,8 @@ body {
   background-color: $color-primary;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 100vh;
+  width: $sidebarWidth;
+  height: 110vh;
   white-space: nowrap;
   .lbp-logo {
     .logo-svg {
@@ -45,4 +46,8 @@ body {
       color: white;
     }
   }
+}
+
+.main-content {
+  margin-left: $sidebarWidth;
 }

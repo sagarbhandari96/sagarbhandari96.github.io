@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/completed-training.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Dashboard</div>
+        <div class="nav-current-page">Completed Training</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -63,7 +63,7 @@
 
       <ul class="list-unstyled sidebar-components">
         <a href="dashboard.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="fas fa-tachometer-alt"></i>
               <span> Dashboard</span>
@@ -86,8 +86,8 @@
             </span>
           </li>
         </a>
-        <a href="completed-training.html">
-          <li>
+        <a href="">
+          <li class="active-page">
             <span class="highlight">
               <i class="far fa-check-circle"></i>
               <span> Completed Training </span>
@@ -122,68 +122,93 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <!-- STATS  -->
-      <div class="row col-12 my-5">
-        <div class="col-lg-4 col-md-6">
-          <div class="card mx-2 my-1 status-card">
-            <div class="card-title" id="registrations">
-              <p class="h1 mx-3 my-2">1234</p>
+      <div class="row col-12 justify-content-center">
+        <div class="col-10 searchbar">
+          <div class="d-flex">
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
             </div>
-            <div class="card-name mx-3">
-              <p class="h5">Registered users</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card mx-2 my-1 status-card">
-            <div class="card-title" id="registrations">
-              <p class="h1 mx-3 my-2">34</p>
-            </div>
-            <div class="card-name mx-3">
-              <p class="h5">Pending approval</p>
+            <div class="col-11">
+              <input
+                type="text"
+                class="search-text"
+                placeholder="Search user..."
+              />
             </div>
           </div>
         </div>
       </div>
+      <div class="row col-12">
+        <div class="mx-5 perform-action">
+          <a class="" href="#"
+            ><button class="btn perform-action-btn">
+              <div class="d-flex">
+                <i class="fas fa-list my-1 mx-2"></i>
+                <div id="btn-text">
+                  Perform Action
+                </div>
+              </div>
+            </button></a
+          >
+        </div>
+      </div>
+      <!-- MEMBERS LIST  -->
+      <div class="row col-12">
+        <div class="user-list mx-5 my-3">
+          <table class="table">
+            <thead class="thead">
+              <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Mobile No.</th>
+                <th scope="col">Gender</th>
+                <th scope="col">DOB</th>
+                <th scope="col">Reasons for joining</th>
+                <th scope="col">Preferred location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="list-entry"
+                onclick="window.location='user_profile_admin_view.html';"
+              >
+                <a href="user_profile_admin_view.html">
+                  <th scope="row">1</th>
+                  <td>Jon Doe</td>
+                  <td>9876543210</td>
+                  <td>Male</td>
+                  <td>1992/1/2</td>
+                  <td>Lorem, ipsum dolor.</td>
+                  <td>Kathmandu</td>
+                </a>
+              </tr>
 
-      <!-- RECENT ACTIVITY  -->
-      <div class="row col-12 my-3">
-        <div class="col-8">
-          <div class="card mx-2 my-4">
-            <div class="card-title" id="registrations">
-              <p class="h5 mx-3 my-2">Recent Activity</p>
-            </div>
-
-            <div class="card-activity mx-3 d-flex">
-              <p class="time-elapsed">2 days ago</p>
-              <p class="h5 activity-icon align-content-right">
-                <i class="fas fa-user-edit mx-4"></i>
-              </p>
-              <p class="activity-desc">
-                Edit User
-              </p>
-            </div>
-
-            <div class="card-activity mx-3 d-flex">
-              <p class="time-elapsed">3 days ago</p>
-              <p class="h5 activity-icon align-content-right">
-                <i class="far fa-check-circle mx-4"></i>
-              </p>
-              <p class="activity-desc">
-                Approved User
-              </p>
-            </div>
-
-            <div class="card-activity mx-3 d-flex">
-              <p class="time-elapsed">1 week ago</p>
-              <p class="h5 activity-icon align-content-right">
-                <i class="fas fa-pen mx-4"></i>
-              </p>
-              <p class="activity-desc">
-                Edit Training
-              </p>
-            </div>
-          </div>
+              <tr
+                class="list-entry"
+                onclick="window.location='user_profile_admin_view.html';"
+              >
+                <th scope="row">2</th>
+                <td>Jon Doe</td>
+                <td>9876543210</td>
+                <td>Male</td>
+                <td>1992/1/2</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Kathmandu</td>
+              </tr>
+              <tr
+                class="list-entry"
+                onclick="window.location='user_profile_admin_view.html';"
+              >
+                <th scope="row">3</th>
+                <td>Jon Doe</td>
+                <td>9876543210</td>
+                <td>Male</td>
+                <td>1992/1/2</td>
+                <td>Lorem, ipsum dolor.</td>
+                <td>Kathmandu</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

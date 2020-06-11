@@ -1,0 +1,21 @@
+@import "../../sass/color_scheme.scss";
+
+.card {
+  box-shadow: 0px 7px 10px -6px $color-grey-dark;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  color: $color-primary;
+}
+.card-name {
+  color: $grey-text;
+}
+
+.time-elapsed {
+  color: $grey-text;
+}
+
+.activity-icon {
+  color: $color-primary;
+}

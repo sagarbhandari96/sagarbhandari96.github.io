@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create User</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/create_user.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand navbar-dark bg-transparent">
+      <div class="container">
+        <div class="nav-current-page">Create User</div>
+        <ul class="navbar-nav ml-auto my-3 mx-5">
+          <li class="nav-item notif-icon px-4">
+            <i class="far fa-bell"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              User Name
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Account settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- SIDEBAR  -->
+    <div class="sidebar">
+      <div class="text-center lbp-logo">
+        <img
+          src="/img/logo.svg"
+          class="logo-svg px-3 py-2"
+          height="65px"
+          alt=""
+        />
+      </div>
+
+      <ul class="list-unstyled sidebar-components">
+        <a href="dashboard.html">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-tachometer-alt"></i>
+              <span> Dashboard</span>
+            </span>
+          </li>
+        </a>
+        <a href="create-user.html">
+          <li class="active-page">
+            <span class="highlight">
+              <i class="fas fa-user-plus"></i>
+              <span> User Creation</span>
+            </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-list"></i>
+              <span> Members List </span>
+            </span>
+          </li>
+        </a>
+        <a href="completed-training.html">
+          <li>
+            <span class="highlight">
+              <i class="far fa-check-circle"></i>
+              <span> Completed Training </span>
+            </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-map-marked-alt"></i>
+              <span>User Relocation </span>
+            </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-user-edit"></i>
+              <span>View/Edit User details </span>
+            </span>
+          </li>
+        </a>
+        <a href="">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-pen"></i>
+              <span> Update Training Details</span>
+            </span>
+          </li>
+        </a>
+      </ul>
+    </div>
+    <!-- MAIN CONTENT  -->
+    <div class="main-content">
+      <!-- USER CREATION FORM  -->
+      <div class="row col-12 justify-content-center" id="form-card">
+        <!-- FORM SECTION  -->
+
+        <div class="col-lg-8">
+          <div class="card text-center" id="form-section">
+            <div class="add-user-icon">
+              <i class="fas fa-3x fa-user-plus"></i>
+            </div>
+
+            <div class="card-body justify-content-center">
+              <h3 class="card-title">Add New User</h3>
+
+              <form class="form-inline justify-content-center" action="">
+                <!-- Name and address  -->
+                <div class="form-row col-lg-12">
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="name"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="name" class="form-label text-left">
+                      <span class="content-name">Name</span>
+                    </label>
+                  </div>
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      name="address"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="address" class="form-label text-left">
+                      <span class="content-name">Address</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- EMAIL  -->
+                <div class="form-row col-lg-12" id="email-field">
+                  <div class="form-group text-left col-12 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="email"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="email" class="form-label text-left">
+                      <span class="content-name">Email</span>
+                    </label>
+                  </div>
+                </div>
+                <!-- CONTACT NUMBER -->
+                <div class="form-row col-lg-12" id="email-field">
+                  <div class="form-group text-left col-12 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="contact"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="contact" class="form-label text-left">
+                      <span class="content-name">Contact number</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-row col-lg-5" id="add-field">
+                  <i class="fas fa-plus-circle fa-lg" id="add-icon"></i>
+                  <span class="my-1">Add another field</span>
+                </div>
+
+                <!-- DEPARTMENT -->
+                <div class="form-row col-lg-12">
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="department"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="department" class="form-label text-left">
+                      <span class="content-name">Department</span>
+                    </label>
+                  </div>
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      name="position"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="position" class="form-label text-left">
+                      <span class="content-name">Position</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- role  -->
+                <div class="form-row col-lg-12" id="dob-gender">
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <select class="form-control" id="gender">
+                      <option selected>Select...</option>
+                      <option value="male">Role 1</option>
+                      <option value="female">Role 2</option>
+                      <option value="other">Role 3</option>
+                    </select>
+                    <label for="gender" class="form-label text-left">
+                      <span class="label-persistent">Role</span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+
+              <a class="" href="#"
+                ><button class="btn btn-register" id="log-in-btn">
+                  Create Account
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM SECTION END  -->
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
