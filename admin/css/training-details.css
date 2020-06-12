@@ -1,0 +1,27 @@
+#section-title {
+  color: #e27115;
+  font-weight: 500;
+  font-size: 1.3rem; }
+
+#bio-text {
+  width: 80%;
+  margin-left: 1rem; }
+
+.section-divider {
+  width: 75%;
+  border: 0.5px solid rgba(128, 128, 128, 0.11);
+  margin-left: 5rem;
+  text-align: center; }
+
+#info-title {
+  color: #555555;
+  font-weight: 500;
+  width: 10rem; }
+
+.perform-action {
+  margin-top: 2rem; }
+  .perform-action .perform-action-btn {
+    border-radius: 1.5rem;
+    background-color: #e27115;
+    border: 0.5px solid #fc8931;
+    color: #f3f3f3; }

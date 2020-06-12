@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>User Relocation</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/user-relocation.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Completed Training</div>
+        <div class="nav-current-page">User Relocation</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -115,7 +116,7 @@
         </li>
 
         <a href="completed-training.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="far fa-check-circle"></i>
               <span> Completed Training </span>
@@ -123,7 +124,7 @@
           </li>
         </a>
         <a href="user-relocation.html">
-          <li>
+          <li class="active-page">
             <span class="highlight">
               <i class="fas fa-map-marked-alt"></i>
               <span>User Relocation </span>
@@ -163,6 +164,10 @@
                 placeholder="Search user..."
               />
             </div>
+            <!-- FILTER  -->
+            <div class="col-1 filter-icon">
+              <i class="fas fa-filter"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -187,12 +192,11 @@
             <thead class="thead">
               <tr>
                 <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Reasons for joining</th>
-                <th scope="col">Preferred location</th>
+                <th scope="col">Candidate Name</th>
+                <th scope="col">Training Status</th>
+                <th scope="col">Training Completed Date</th>
+                <th scope="col">Training Instructor</th>
+                <th scope="col">Preferred Location</th>
               </tr>
             </thead>
             <tbody>
@@ -203,37 +207,37 @@
                 <a href="user_profile_admin_view.html">
                   <th scope="row">1</th>
                   <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-                  <td>1992/1/2</td>
-                  <td>Lorem, ipsum dolor.</td>
+                  <td>Completed</td>
+                  <td>2019/2/3</td>
+                  <td>John Smith</td>
                   <td>Kathmandu</td>
                 </a>
               </tr>
-
               <tr
                 class="list-entry"
                 onclick="window.location='user_profile_admin_view.html';"
               >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
+                <a href="user_profile_admin_view.html">
+                  <th scope="row">1</th>
+                  <td>Jon Doe</td>
+                  <td>Completed</td>
+                  <td>2019/2/3</td>
+                  <td>John Smith</td>
+                  <td>Kathmandu</td>
+                </a>
               </tr>
               <tr
                 class="list-entry"
                 onclick="window.location='user_profile_admin_view.html';"
               >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
+                <a href="user_profile_admin_view.html">
+                  <th scope="row">1</th>
+                  <td>Jon Doe</td>
+                  <td>Completed</td>
+                  <td>2019/2/3</td>
+                  <td>John Smith</td>
+                  <td>Kathmandu</td>
+                </a>
               </tr>
             </tbody>
           </table>

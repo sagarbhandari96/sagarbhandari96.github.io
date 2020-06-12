@@ -31,6 +31,36 @@ body {
     .sidebar .sidebar-components .highlight:hover {
       background-color: #f7a269;
       color: white; }
+    .sidebar .sidebar-components .active-page:hover .highlight {
+      background-color: #f7a269;
+      color: white; }
+
+.active-page-members .highlight {
+  background-color: #f3f3f3;
+  color: #e27115; }
+
+.submenu {
+  margin-top: 1rem; }
+  .submenu .highlight-active {
+    padding: 10px 30px 10px 5px;
+    border-radius: 1rem;
+    transition: 0.2s all ease-out;
+    background-color: #f3f3f3;
+    color: #e27115; }
+    .submenu .highlight-active:hover {
+      background-color: #f7a269;
+      color: white; }
+
+.submenu a {
+  display: block;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem; }
+
+.submenu .highlight {
+  background-color: #e27115;
+  color: #f3f3f3; }
 
 .main-content {
   margin-left: 250px; }

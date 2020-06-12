@@ -45,7 +45,44 @@ body {
       background-color: $color-primary-muted;
       color: white;
     }
+    .active-page:hover .highlight {
+      background-color: $color-primary-muted;
+      color: white;
+    }
   }
+}
+
+.active-page-members {
+  .highlight {
+    background-color: $color-grey-light;
+    color: $color-primary;
+  }
+}
+
+.submenu {
+  margin-top: 1rem;
+  .highlight-active {
+    padding: 10px 30px 10px 5px;
+    border-radius: 1rem;
+    transition: 0.2s all ease-out;
+    background-color: $color-grey-light;
+    color: $color-primary;
+    &:hover {
+      background-color: $color-primary-muted;
+      color: white;
+    }
+  }
+}
+.submenu a {
+  display: block;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+.submenu .highlight {
+  background-color: $color-primary;
+  color: $color-grey-light;
 }
 
 .main-content {

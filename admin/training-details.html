@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>Training Details</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/training-details.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Completed Training</div>
+        <div class="nav-current-page">Training Details</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -115,7 +115,7 @@
         </li>
 
         <a href="completed-training.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="far fa-check-circle"></i>
               <span> Completed Training </span>
@@ -139,7 +139,7 @@
           </li>
         </a>
         <a href="update-training.html">
-          <li>
+          <li class="active-page">
             <span class="highlight">
               <i class="fas fa-pen"></i>
               <span> Update Training Details</span>
@@ -150,95 +150,54 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
+      <div class="row col-12  my-5">
+        <!-- Address -->
+        <div id="detail-sections-container" class="col-10 mx-5">
+            <div id="section-title" class="my-1">Training</div>
+            <div id="user-detail-container">
+              <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Training Description</div>
+                <div class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sequi architecto assumenda voluptatum dolorum in, saepe pariatur culpa voluptate tempore debitis fugit at quidem veniam sunt officiis voluptates dolores laudantium?</div>
+              </div>
+
+              <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Type of training</div>
+                <div>Lorem, ipsum dolor.</div>
+              </div>
+
+              <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Duration of training</div>
+                <div>1 Year</div>
+              </div>
+
+              <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Training Instructor</div>
+                <div>Kevin James</div>
+              </div>
+              
+              <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Time-slot</div>
+                <div>9-12 PM</div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="#"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Perform Action
-                </div>
+          <hr class="section-divider" />
+          <div class="col-10 mx-5">
+            <div class="d-flex my-3">
+                <div id="info-title" class="col-4">Additonal information</div>
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quibusdam ex non ipsum consequatur perferendis, est dolorem repellat illum ut! Rerum eum, ea iusto mollitia voluptatum rem libero voluptatibus sapiente.</div>
               </div>
-            </button></a
-          >
-        </div>
-      </div>
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Reasons for joining</th>
-                <th scope="col">Preferred location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-                  <td>1992/1/2</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>Kathmandu</td>
-                </a>
-              </tr>
-
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+          </div>
+          <div class="mx-5 perform-action">
+            <a class="" href="#"><button class="btn perform-action-btn">
+                <div class="d-flex">
+                  <i class="far fa-edit my-1 mx-2"></i>
+                  <div id="btn-text">
+                    Edit
+                  </div>
+                </div>
+              </button></a>
+          </div>
     </div>
 
     <script

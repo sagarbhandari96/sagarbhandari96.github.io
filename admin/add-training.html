@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>Create User</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/create_user.css" />
+    <link rel="stylesheet" href="css/add-training.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Completed Training</div>
+        <div class="nav-current-page">Add new training</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -115,7 +116,7 @@
         </li>
 
         <a href="completed-training.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="far fa-check-circle"></i>
               <span> Completed Training </span>
@@ -139,7 +140,7 @@
           </li>
         </a>
         <a href="update-training.html">
-          <li>
+          <li class="active-page">
             <span class="highlight">
               <i class="fas fa-pen"></i>
               <span> Update Training Details</span>
@@ -150,94 +151,136 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
+      <!-- USER CREATION FORM  -->
+      <div class="row col-12 justify-content-center" id="form-card">
+        <!-- FORM SECTION  -->
+
+        <div class="col-lg-8">
+          <div class="card text-center" id="form-section">
+            <div class="add-user-icon">
+              <img src="../img/icons/new-training.svg" height="70px" alt="" />
             </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
+
+            <div class="card-body justify-content-center">
+              <h3 class="card-title">Add new training details</h3>
+              <div class="col-lg-12 display-5 text-left mx-3">
+                Fields marked with asterisk(*) are mandatory
+              </div>
+              <form class="form-inline justify-content-center" action="">
+                <!-- description of training program -->
+
+                <div class="form-row col-lg-12" id="reasons-field">
+                  <div class="form-group text-left col-12">
+                    <textarea
+                      name=""
+                      id="reason-for-joining"
+                      placeholder="Description..."
+                      rows="4"
+                      cols="30"
+                      class="form-control"
+                    ></textarea>
+                    <label
+                      for="reasons"
+                      class="form-label text-left"
+                      id="textarea-label"
+                    >
+                      <span id="textarea-span"
+                        >Description of training program*</span
+                      >
+                    </label>
+                  </div>
+                </div>
+                <!-- Type and Duration -->
+                <div class="form-row col-lg-12">
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="name"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="name" class="form-label text-left">
+                      <span class="content-name">Type of training</span>
+                    </label>
+                  </div>
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      name="address"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="address" class="form-label text-left">
+                      <span class="content-name">Duration of training*</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Instructor and time slots -->
+                <div class="form-row col-lg-12">
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      id="name"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="name" class="form-label text-left">
+                      <span class="content-name">Training Instructor*</span>
+                    </label>
+                  </div>
+                  <div class="form-group text-left col-12 col-md-6 input-field">
+                    <input
+                      type="text"
+                      class="form-control mx-auto"
+                      name="address"
+                      autocomplete="off"
+                      required
+                    />
+                    <label for="address" class="form-label text-left">
+                      <span class="content-name">Time-Slots*</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Additional info -->
+
+                <div class="form-row col-lg-12" id="reasons-field">
+                  <div class="form-group text-left col-12">
+                    <textarea
+                      name=""
+                      id="reason-for-joining"
+                      placeholder="Enter additonal information..."
+                      rows="4"
+                      cols="30"
+                      class="form-control"
+                    ></textarea>
+                    <label
+                      for="reasons"
+                      class="form-label text-left"
+                      id="textarea-label"
+                    >
+                      <span id="textarea-span"
+                        >Additonal information on training</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </form>
+
+              <a class="" href="#"
+                ><button class="btn btn-register" id="log-in-btn">
+                  Add Training
+                </button></a
+              >
             </div>
           </div>
         </div>
-      </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="#"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Perform Action
-                </div>
-              </div>
-            </button></a
-          >
-        </div>
-      </div>
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Reasons for joining</th>
-                <th scope="col">Preferred location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-                  <td>1992/1/2</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>Kathmandu</td>
-                </a>
-              </tr>
 
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- FORM SECTION END  -->
       </div>
     </div>
 
