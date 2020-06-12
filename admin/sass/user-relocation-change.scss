@@ -1,0 +1,58 @@
+@import "../../sass/color_scheme";
+
+#form-section {
+  border: 1px solid $color-form-primary;
+  border-radius: 1rem;
+}
+.card-title {
+  color: $color-form-primary;
+  margin-top: 1rem;
+}
+.card-subtitle {
+  color: $grey-text;
+}
+
+.profile-block {
+  margin-top: 2rem;
+  .profile-pic {
+    border-radius: 1rem;
+  }
+  .user-name {
+    font-size: 1.5rem;
+    color: $color-form-strong;
+  }
+  .location-block {
+    color: $grey-text;
+    .user-location {
+      color: $grey-text-darker;
+      font-weight: 600;
+    }
+  }
+}
+
+#form-section .form-control {
+  width: 100%;
+  border-radius: 15px;
+}
+.form-label {
+  position: absolute;
+  height: 100%;
+}
+.content-name {
+  padding-left: 1rem;
+  transition: 0.1s all ease-out;
+  color: $grey-text;
+}
+.form-control:focus + .form-label .content-name,
+input:valid + .form-label .content-name {
+  opacity: 100%;
+  transform: translateY(-2rem);
+
+  font-size: 0.9rem;
+  color: $color-form-primary;
+}
+#confirm-btn {
+  background-color: $color-form-primary;
+  color: white;
+  border-radius: 1rem;
+}

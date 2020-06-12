@@ -1,0 +1,48 @@
+#form-section {
+  border: 1px solid #fc8931;
+  border-radius: 1rem; }
+
+.card-title {
+  color: #fc8931;
+  margin-top: 1rem; }
+
+.card-subtitle {
+  color: #7e7e7e; }
+
+.profile-block {
+  margin-top: 2rem; }
+  .profile-block .profile-pic {
+    border-radius: 1rem; }
+  .profile-block .user-name {
+    font-size: 1.5rem;
+    color: #ff7c00; }
+  .profile-block .location-block {
+    color: #7e7e7e; }
+    .profile-block .location-block .user-location {
+      color: #666666;
+      font-weight: 600; }
+
+#form-section .form-control {
+  width: 100%;
+  border-radius: 15px; }
+
+.form-label {
+  position: absolute;
+  height: 100%; }
+
+.content-name {
+  padding-left: 1rem;
+  transition: 0.1s all ease-out;
+  color: #7e7e7e; }
+
+.form-control:focus + .form-label .content-name,
+input:valid + .form-label .content-name {
+  opacity: 100%;
+  transform: translateY(-2rem);
+  font-size: 0.9rem;
+  color: #fc8931; }
+
+#confirm-btn {
+  background-color: #fc8931;
+  color: white;
+  border-radius: 1rem; }
