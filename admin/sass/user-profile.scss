@@ -1,0 +1,77 @@
+@import "../../sass/color_scheme";
+
+#card-section {
+  border: 1px solid $color-form-primary;
+  border-radius: 1rem;
+}
+.card-title {
+  color: $color-form-primary;
+  margin-top: 1rem;
+}
+.card-subtitle {
+  color: $grey-text;
+}
+
+.profile-block {
+  margin-top: 2rem;
+  .profile-pic {
+    border-radius: 1rem;
+  }
+  .user-name {
+    font-size: 1.5rem;
+    color: $color-form-strong;
+  }
+  .user-detail-block {
+    color: $grey-text;
+    .user-block-desc {
+      color: $grey-text-darker;
+      font-weight: 600;
+      #ad-date {
+        color: $grey-text-dark;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+#bio-title {
+  color: #ff7b00;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+#bio-text {
+  width: 80%;
+  margin-left: 1rem;
+}
+.section-divider {
+  width: 75%;
+  border: 0.5px solid rgba(128, 128, 128, 0.11);
+  margin-left: 5rem;
+  text-align: center;
+}
+#info-title {
+  color: $grey-text-darker;
+  font-weight: 500;
+  width: 10rem;
+}
+
+// Buttons
+.action-buttons {
+  background-color: #ff8b1e;
+  border-radius: 2rem;
+  color: white;
+  width: fit-content;
+  transition: 0.1s all ease-in;
+}
+.accept:hover {
+  background-color: #ff7300;
+  color: white;
+}
+.decline:hover {
+  background-color: #ff5100;
+  color: white;
+}
+.on-hold:hover {
+  background-color: #3f2104;
+  color: white;
+}
