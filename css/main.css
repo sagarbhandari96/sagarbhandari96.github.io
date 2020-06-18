@@ -2,11 +2,11 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  background-color: #f7f7f7; }
+  background-color: #f3f3f3; }
 
 .navbar {
-  margin-top: 2rem;
-  z-index: 3; }
+  z-index: 3;
+  margin-top: 2rem; }
   .navbar .nav-link {
     color: white !important; }
     .navbar .nav-link .btn {
@@ -26,6 +26,22 @@ body {
     transition: 0.1s ease-out; }
   .navbar .navbar-brand:hover {
     box-shadow: 3px 5px #85858563; }
+
+.navbar-collapse {
+  background: transparent !important; }
+
+@media (max-width: 576px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom right, #e27115, #e2884a) !important;
+    width: 500px !important; } }
+
+.navbar-collapse {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #e27115, #e2884a);
+  width: 500px !important; }
 
 .navbar-nav .nav-item {
   margin-left: 1rem;
@@ -64,7 +80,7 @@ body {
   bottom: -1px;
   width: 100%;
   opacity: 0.3;
-  fill: #f7f7f7; }
+  fill: #f3f3f3; }
 
 .curves-svg {
   z-index: 2;
@@ -72,7 +88,7 @@ body {
   bottom: -1px;
   width: 100%;
   opacity: 1;
-  fill: #f7f7f7; }
+  fill: #f3f3f3; }
 
 .home-inner {
   padding-top: 175px;
@@ -137,7 +153,7 @@ body {
     transform: translate3d(-15vw, 0vw, 0vw); } }
 
 #our-services {
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   padding-top: 2rem;
   padding-bottom: 1rem;
   position: relative; }
@@ -198,7 +214,7 @@ body {
 
 #why-us {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   padding-top: 50px;
   padding-bottom: 100px; }
 
@@ -226,7 +242,8 @@ body {
     width: 75%; } }
 
 @media all and (max-width: 510px) {
-  .animated-svg, .animated-svg-2 {
+  .animated-svg,
+  .animated-svg-2 {
     display: none; } }
 
 footer {
@@ -234,7 +251,7 @@ footer {
   background: linear-gradient(to bottom right, #e27115, #e2884a); }
 
 footer .curves-svg {
-  fill: #f7f7f7;
+  fill: #f3f3f3;
   top: 0; }
 
 footer .contact-field {

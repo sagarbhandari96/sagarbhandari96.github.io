@@ -19,9 +19,8 @@ body {
 }
 
 .navbar {
-  margin-top: 2rem;
   z-index: $navbar-z-index;
-
+  margin-top: 2rem;
   .nav-link {
     color: white !important;
     .btn {
@@ -46,6 +45,27 @@ body {
   .navbar-brand:hover {
     box-shadow: 3px 5px #85858563;
   }
+}
+.navbar-collapse {
+  background: transparent !important;
+}
+@media (max-width: 576px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+      to bottom right,
+      $color-primary,
+      $color-light
+    ) !important;
+    width: 500px !important;
+  }
+}
+.navbar-collapse {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, $color-primary, $color-light);
+  width: 500px !important;
 }
 .navbar-nav .nav-item {
   margin-left: 1rem;
@@ -132,7 +152,7 @@ body {
 .circle-1 {
   fill: rgba(255, 255, 255, 0.3);
   margin-left: 5rem;
-  
+
   animation: glow 5s infinite;
 }
 @keyframes glow {
@@ -175,17 +195,17 @@ body {
   }
 }
 
-// SERVICES SECTION 
-#our-services{
+// SERVICES SECTION
+#our-services {
   background-color: $color-grey-light;
   padding-top: 2rem;
   padding-bottom: 1rem;
   position: relative;
 }
-#our-services #section-title{
-  color:$color-primary;
+#our-services #section-title {
+  color: $color-primary;
 }
-#our-services #section-desc{
+#our-services #section-desc {
   font-size: 1.3rem;
 }
 #our-services .card {
@@ -195,16 +215,9 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.28);
 }
 
-
-
-
-
-
-
-
 #about-us {
- position: relative;
-  
+  position: relative;
+
   background-color: $color-grey-dark;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -236,7 +249,7 @@ body {
   //   $color-primary,
   //   $color-light
   // );
-  transform: translateY(-.5rem);
+  transform: translateY(-0.5rem);
   cursor: default;
   box-shadow: 3px 5px #8585851f;
 }
@@ -270,79 +283,64 @@ body {
 //   color: white;
 // }
 
-
-
-// WHY US 
-#why-us{
+// WHY US
+#why-us {
   position: relative;
   background-color: $color-grey-light;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-#why-us #why-text-block{
+#why-us #why-text-block {
   background: white;
   padding-top: 1rem;
   padding-left: 1rem;
   border-radius: 2rem;
   transition: all 0.1s ease-out;
-
 }
 #why-us #why-text-block:hover {
-  transform: translateY(-.5rem);
-  
+  transform: translateY(-0.5rem);
+
   cursor: default;
   box-shadow: 3px 5px #8585851f;
-  
 }
-
 
 /* Media Queries */
 @media all and (max-width: 991px) {
-  #training-svg{
+  #training-svg {
     display: none;
   }
 
   #our-services .card {
     width: 100%;
-}
+  }
 }
 @media all and (max-width: 765px) {
- 
   #our-services .card {
     width: 75%;
+  }
 }
-}
-@media all and (max-width:510px){
-  .animated-svg,.animated-svg-2{
+@media all and (max-width: 510px) {
+  .animated-svg,
+  .animated-svg-2 {
     display: none;
   }
 }
 
-
-
-footer{
+footer {
   position: relative;
   background: linear-gradient(to bottom right, $color-primary, $color-light);
 }
-footer .curves-svg{
-  fill: $color-grey-light;  
+footer .curves-svg {
+  fill: $color-grey-light;
   top: 0;
   // transform: translateY(30.5px);
-  }
+}
 
-  footer .contact-field{
-    padding-left: 10px;
-    transform: translateY(-5px);
-    
-  }
-#contact-block{
+footer .contact-field {
+  padding-left: 10px;
+  transform: translateY(-5px);
+}
+#contact-block {
   padding-top: 3rem;
   color: white;
 }
-
-
-
-
-
-
-
