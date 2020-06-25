@@ -16,15 +16,38 @@ body {
     color: white;
     width: 200px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-right: 1rem; }
+    padding-bottom: 1rem; }
+
+.user-training-info {
+  background-color: #f3f3f3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem; }
+  .user-training-info .title {
+    color: #e27115;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem; }
+  .user-training-info .title-underline {
+    margin-top: 0rem;
+    border: 2px solid #e27115;
+    width: 13vw;
+    margin-left: 1rem;
+    transition: 0.2s width ease-out; }
+  .user-training-info .placement-details {
+    margin-left: 1.5rem;
+    padding-bottom: 2rem; }
+    .user-training-info .placement-details .title-1 {
+      color: #6e6e6e;
+      font-weight: 600; }
+    .user-training-info .placement-details .title-2 {
+      padding-left: 0.5rem; }
 
 .announcement-box {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: #f7f7f7;
-  border-radius: 2rem;
-  width: 80%; }
+  background-color: #f3f3f3;
+  border-radius: 2rem; }
   .announcement-box .title {
     color: #e27115;
     padding-top: 1rem;
@@ -53,20 +76,22 @@ body {
       color: #6e6e6e;
       font-weight: 600; }
     .announcement-box .ann-container .ann-date {
-      padding-left: .5rem; }
+      color: #666666;
+      padding-left: 0.5rem; }
     .announcement-box .ann-container .ann-desc {
+      color: black;
       width: 80%; }
     .announcement-box .ann-container a {
       text-decoration: none; }
     .announcement-box .ann-container .view-details {
-      height: 0rem;
+      height: 1rem;
       opacity: 0;
       margin-bottom: 1rem;
       transition: 0.1s ease-out; }
       .announcement-box .ann-container .view-details #view-details-hr {
         width: 0%;
         transform: translateY(-1rem);
-        transition: .2s width ease-out; }
+        transition: 0.2s width ease-out; }
     .announcement-box .ann-container #ann-hr {
       width: 90%; }
   .announcement-box .ann-container:hover .view-details {

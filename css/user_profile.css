@@ -1,0 +1,39 @@
+.profile-pic-block .profile-pic {
+  border-radius: 50%; }
+
+.profile-pic-block .profile-button {
+  background-color: #e2884a;
+  color: white;
+  border-radius: 1rem; }
+
+.profile-pic-block:hover .profile-button {
+  background-color: #e27115; }
+
+.user-name {
+  font-size: 1.5rem;
+  color: #ff7c00; }
+
+.user-detail-block {
+  color: #7e7e7e; }
+  .user-detail-block .user-block-desc {
+    color: #666666;
+    font-weight: 600; }
+    .user-detail-block .user-block-desc #ad-date {
+      color: #6e6e6e;
+      font-size: 0.7rem; }
+
+#bio-title {
+  color: #e27115;
+  font-weight: 500;
+  font-size: 1.3rem; }
+
+.section-divider {
+  width: 50%;
+  border: 0.5px solid rgba(128, 128, 128, 0.11);
+  margin-left: 5rem;
+  text-align: center; }
+
+#info-title {
+  color: #666666;
+  font-weight: 500;
+  width: 10rem; }

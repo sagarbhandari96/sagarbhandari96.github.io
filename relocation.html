@@ -30,7 +30,7 @@
       
   <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="user_dashboard.html"
           ><img src="img/logo.svg" height="60px" alt="Little Buddy Logo"
         /></a>
         <button
@@ -66,11 +66,17 @@
                 User Name
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Account settings</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Log Out</a>
-              </div>
+                <a class="dropdown-item" href="user_profile.html">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="ml-1">Profile</span></a>
+                  <!-- <a class="dropdown-item" href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="ml-1">Account settings</span></a> -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="ml-1">Log Out</span></a>
+            </div>
             </li>
             
             
@@ -139,6 +145,25 @@
            </div>
            
         </div>   
+         <!-- reasons for applying -->
+         
+         <div class="form-row col-lg-12" id="reasons-field">
+                
+          <div class="form-group text-left col-12 ">
+           
+            <textarea name="" id="reason-for-joining"
+            placeholder="Explain why you want to change your current location"
+            rows="8" class="form-control"></textarea>
+          <label for="reasons" class="form-label text-left" id="textarea-label"
+          >
+          <span id="textarea-span">Reasons for relocation</span> 
+          
+          </label>       
+                      
+         </div>
+         
+        </div> 
+
         
               
             </form>

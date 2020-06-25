@@ -46,7 +46,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#"
-                  ><i class="far fa-bell nav-icons"></i>
+                  ><i class="far fa-bell "></i>
                   <span class="sr-only">(current)</span>
                   </a>
               </li>
@@ -60,14 +60,20 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                <i class="far fa-user-circle nav-icons"></i>
+                <i class="far fa-user-circle "></i>
                   User Name
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Account settings</a>
+                  <a class="dropdown-item" href="user_profile.html">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="ml-1">Profile</span></a>
+                  <!-- <a class="dropdown-item" href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="ml-1">Account settings</span></a> -->
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log Out</a>
+                  <a class="dropdown-item" href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="ml-1">Log Out</span></a>
                 </div>
               </li>
               
@@ -84,7 +90,8 @@
   
   <!-- DESCRIPTION SECTION  -->
   <div class="container">
-    <div class="ml-auto dash-buttons" >
+    <div class="row col-11 dash-buttons" >
+      <div class="col-lg-3 col-md-5 mx-1 my-2">
         <a class="" href="apply_training.html"
         ><button class="btn btn-apply"> 
           <img src="img/icons/apply training-white.svg" height="40px" alt=""> 
@@ -93,7 +100,10 @@
           </div> 
         </button></a
       > 
+    </div>
+      <div class="col-lg-3 col-md-5 mx-1 my-2">
 
+      
       <a class="" href="relocation.html"
         ><button class="btn btn-apply"> 
           <img src="img/icons/relocation-white.svg" height="40px" alt=""> 
@@ -102,9 +112,14 @@
           </div> 
         </button></a
       > 
+    </div>
+      
       </div>  
 
-      <div class="announcement-box ">
+      <div class="row col-12">
+
+      
+      <div class="announcement-box mr-lg-5 col-lg-7 col-md-10">
         <div class="title">
             Announcements
         </div>
@@ -112,6 +127,7 @@
         <div class="container">
             <!-- ANNOUNCEMENT 1 -->
             <div class="ann-container py-2">
+              <a href="announcement.html">
                 <div class="title-1">
                   Announcement title
                 </div>
@@ -126,7 +142,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                   veritatis, eius possimus provident laboriosam fugit.
                 </div> 
-                <a href="announcement.html">
+                
                 <div class="view-details text-center">
                   View details
                   <hr id="view-details-hr"> 
@@ -136,6 +152,7 @@
               </div>
               <!-- ANNOUNCEMENT 2 -->
               <div class="ann-container py-2">
+                <a href="announcement.html">
                 <div class="title-1">
                   Announcement title
                 </div>
@@ -150,7 +167,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                   veritatis, eius possimus provident laboriosam fugit.
                 </div> 
-                <a href="announcement.html">
+                
                 <div class="view-details text-center">
                   View details
                   <hr id="view-details-hr"> 
@@ -161,10 +178,39 @@
         
         
         </div>
-      </div>   
+      </div>  
+    
+      <div class="col-lg-4 col-md-9  user-training-info">
+        <div class="title">
+          Current Status
+        </div>
+        <hr class="title-underline mr-auto">
+        <div class="placement-details">        
+        <div class="d-flex">
+          <div class="title-1">Placement: </div>
+          <div class="title-2">
+            Kathmandu
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="title-1">Department: </div>
+          <div class="title-2">
+            Lorem ipsum
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="title-1">Duration: </div>
+          <div class="title-2">
+            1 Year
+          </div>
+        </div>
+      </div>
+      </div> 
+    </div>
       
       <!-- STATUS BOX -->
-      <div class="announcement-box ">
+      <div class="row col-12">
+      <div class="announcement-box col-lg-7 col-md-9">
         <div class="title">
             Your application status
         </div>
@@ -235,7 +281,8 @@
         
         
         </div>
-      </div>   
+      </div>  
+    </div> 
   </div>
 
    <!-- FOOTER SECTION -->
