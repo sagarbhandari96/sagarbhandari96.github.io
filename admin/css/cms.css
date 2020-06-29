@@ -1,0 +1,10 @@
+.list-entry {
+  cursor: pointer; }
+  .list-entry:hover {
+    background-color: #fc8f2a;
+    color: white; }
+  .list-entry:hover th {
+    color: white; }
+
+.page-name {
+  color: #7e7e7e; }

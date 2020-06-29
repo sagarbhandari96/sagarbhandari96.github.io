@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>CMS.Our Services</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/cms_about_us.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">View/Edit User Details</div>
+        <div class="nav-current-page">Content Management System</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -131,7 +131,7 @@
           </li>
         </a>
         <a href="view-edit.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="fas fa-user-edit"></i>
               <span>View/Edit User details </span>
@@ -147,7 +147,7 @@
           </li>
         </a>
         <a href="cms.html">
-          <li>
+          <li class="active-page">
             <span class="highlight">
               <i class="far fa-file-alt"></i>
               <span> Content Management</span>
@@ -158,96 +158,104 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
+        <div class="row col-12 justify-content-center mt-5">
+            
+            <div class="col-6 form-card">
+                <div class="form-title">Our Services</div>
+                <hr class="title-underline mr-auto">
+                
+                <form class="form-inline " action="">
+                <div class="form-group text-left input-field col-lg-12 mt-3">
+               
+                <input type="text" class="form-control mx-auto" id="heading" autocomplete="off" required="">
+              <label for="heading" class="form-label text-left">
+              <span class="content-name">Heading</span> 
+              
+              </label>       
+                          
+             </div>
+             <!-- image subheading-->
+         
+         <div class="form-row col-lg-12" id="details-field">
+                
+            <div class="form-group text-left col-12 ">
+                
+              <textarea name="" id="reason-for-joining"
+              placeholder="Description"
+              rows="8" class="form-control"></textarea>
+                 
+                        
+           </div>
+           <div class="mx-auto upload-section px-3 my-3" onclick="window.location='cms_manage_service_cards.html';">
+            <div class="upload-icon text-center">
+                <i class="fas fa-cogs"></i>
+        </div>
+            Manage Service Cards
+        </div>
+        <div class="mx-auto upload-section px-3 my-3"  data-toggle="modal"
+        data-target="#contactModal">
+            <div class="upload-icon text-center">
+                <i class="fas fa-plus"></i>
+        </div>
+           Add Service Card
+        </div>
+           
+          </div> 
+           
+             </form>
+             <div class="row col-12 my-3 ml-1">
+                <button class="btn save-btn mx-auto ">
+                  <div id="btn-text">
+                    <i class="far fa-check-circle"></i>
+                    Save Changes
+                  </div>
+                </button>
+              </div>
+
+                 
             </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
+            
+        </div>
+       
+
+        </div>
+    </div>
+
+    <!-- ADD SERVICE CARD MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Service Card</h5>
+              <button class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Service Title</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="message">Service Description</label>
+                  <textarea class="form-control"></textarea>
+                </div>
+              </form>
+              <div class="mx-auto upload-section px-3 my-3 text-center" >
+                <div class="upload-icon">
+                    <i class="fas fa-plus"></i>
+            </div>
+                Add card image
+            </div>
+
+            </div>
+            <div class="modal-footer">
+              <button class="btn save-btn">Add Card</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="#"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Perform Action
-                </div>
-              </div>
-            </button></a
-          >
-        </div>
-      </div>
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Reasons for joining</th>
-                <th scope="col">Preferred location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-                  <td>1992/1/2</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>Kathmandu</td>
-                </a>
-              </tr>
-
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

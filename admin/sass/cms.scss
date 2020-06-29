@@ -1,0 +1,15 @@
+@import "../../sass/color_scheme";
+.list-entry {
+  cursor: pointer;
+  &:hover {
+    background-color: #fc8f2a;
+    color: white;
+  }
+  &:hover th {
+    color: white;
+  }
+}
+
+.page-name {
+  color: $grey-text;
+}

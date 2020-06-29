@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>Content Management</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/cms.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">View/Edit User Details</div>
+        <div class="nav-current-page">Content Management System</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -131,7 +131,7 @@
           </li>
         </a>
         <a href="view-edit.html">
-          <li class="active-page">
+          <li>
             <span class="highlight">
               <i class="fas fa-user-edit"></i>
               <span>View/Edit User details </span>
@@ -147,7 +147,7 @@
           </li>
         </a>
         <a href="cms.html">
-          <li>
+          <li class="active-page">
             <span class="highlight">
               <i class="far fa-file-alt"></i>
               <span> Content Management</span>
@@ -158,95 +158,53 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
+        <div class="row col-12">
+            <div class="col-6 user-list mx-5 my-5">
+              <table class="table">
+                <thead class="thead">
+                  <tr>
+                    
+                    <th scope="col">Page Name</th>
+                    <th scope="col">Last Modified</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="list-entry" onclick="window.location='cms_about_us.html';">
+                    <th class="page-name" scope="row">About Us</th>
+                      <td>June 24 2020</td>             
+                    
+                  </tr>
+                  <tr class="list-entry" onclick="window.location='cms_homepage.html';">
+                    <th class="page-name" scope="row">Home Page</th>
+                      <td>June 6 2020</td>             
+                    
+                  </tr>
+                  <tr class="list-entry" onclick="window.location='cms_why_us.html';">
+                    <th class="page-name" scope="row">Why Us</th>
+                      <td>June 6 2020</td>             
+                    
+                  </tr>
+                  <tr class="list-entry" onclick="window.location='cms_our_services.html';">
+                    <th class="page-name" scope="row">Our Services</th>
+                      <td>June 5 2020</td>             
+                    
+                  </tr>
+                  <tr class="list-entry" onclick="window.location='content_management_edit.html';">
+                    <th class="page-name" scope="row">Contact Us</th>
+                      <td>June 5 2020</td>             
+                    
+                  </tr>
+                  
+    
+                  
+                </tbody>
+              </table>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="#"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Perform Action
-                </div>
-              </div>
-            </button></a
-          >
-        </div>
-      </div>
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-                <th scope="col">DOB</th>
-                <th scope="col">Reasons for joining</th>
-                <th scope="col">Preferred location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-                  <td>1992/1/2</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>Kathmandu</td>
-                </a>
-              </tr>
+       
 
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-                <td>1992/1/2</td>
-                <td>Lorem, ipsum dolor.</td>
-                <td>Kathmandu</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
-      </div>
     </div>
 
     <script
