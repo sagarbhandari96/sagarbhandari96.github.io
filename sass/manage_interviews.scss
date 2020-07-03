@@ -1,0 +1,18 @@
+@import "color_scheme";
+
+.interview-container {
+  .interview-action {
+    opacity: 75%;
+    transition: 0.2s opacity ease-out;
+    //   color: $color-primary;
+  }
+  &:hover .interview-action {
+    opacity: 100%;
+  }
+  .icon-container {
+    cursor: pointer;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

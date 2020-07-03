@@ -52,6 +52,7 @@
     </nav>
     <!-- SIDEBAR  -->
     <div class="sidebar">
+      <!-- LOGO  -->
       <div class="text-center lbp-logo">
         <img
           src="/img/logo.svg"
@@ -62,6 +63,7 @@
       </div>
 
       <ul class="list-unstyled sidebar-components">
+        <!-- DASHBOARD  -->
         <a href="dashboard.html">
           <li>
             <span class="highlight">
@@ -70,6 +72,8 @@
             </span>
           </li>
         </a>
+
+        <!-- ADMIN USER  -->
         <a href="create-user.html">
           <li>
             <span class="highlight">
@@ -78,7 +82,7 @@
             </span>
           </li>
         </a>
-
+        <!-- MEMBERS LIST  -->
         <li>
           <a
             href="#memberSubmenu"
@@ -113,47 +117,131 @@
             >
           </div>
         </li>
+        <!-- USER DETAILS  -->
+        <li class="active-page-members">
+          <a
+            href="#userDetailsSubmenu"
+            data-target="#userDetailsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-users"></i> <span> User Details</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="userDetailsSubmenu">
+            <a href="view-edit.html" id="submenu-list">
+              <span class="highlight-active">
+                <i class="far fa-edit"></i> Update User Info</span
+              ></a
+            >
+            <a href="user-relocation.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-map-marked-alt"></i> User Relocation
+              </span></a
+            >
+          </div>
+        </li>
 
-        <a href="completed-training.html">
-          <li>
+        <!-- TRAINING  -->
+        <li>
+          <a
+            href="#trainingSubmenu"
+            data-target="#trainingSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
             <span class="highlight">
-              <i class="far fa-check-circle"></i>
-              <span> Completed Training </span>
+              <i class="fas fa-graduation-cap"></i> <span> Training</span>
             </span>
-          </li>
-        </a>
-        <a href="user-relocation.html">
-          <li>
-            <span class="highlight">
-              <i class="fas fa-map-marked-alt"></i>
-              <span>User Relocation </span>
-            </span>
-          </li>
-        </a>
-        <a href="view-edit.html">
-          <li class="active-page">
-            <span class="highlight">
-              <i class="fas fa-user-edit"></i>
-              <span>View/Edit User details </span>
-            </span>
-          </li>
-        </a>
-        <a href="update-training.html">
-          <li>
-            <span class="highlight">
-              <i class="fas fa-pen"></i>
-              <span> Update Training Details</span>
-            </span>
-          </li>
-        </a>
-        <a href="cms.html">
-          <li>
+          </a>
+          <div class="collapse submenu" id="trainingSubmenu">
+            <a href="update-training.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-plus"></i> Add Training Details</span
+              ></a
+            >
+            <a href="completed-training.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-user-graduate"></i> Completed Trainee List
+              </span></a
+            >
+          </div>
+        </li>
+
+        <!-- CONTENT MANAGEMENT SYSTEM  -->
+        <li>
+          <a
+            href="#cmsSubmenu"
+            data-target="#cmsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
             <span class="highlight">
               <i class="far fa-file-alt"></i>
-              <span> Content Management</span>
+              <span> Content Mangement</span>
             </span>
-          </li>
-        </a>
+          </a>
+          <div class="collapse submenu" id="cmsSubmenu">
+            <a href="cms/homepage.html" id="submenu-list">
+              <span class="highlight"> Homepage</span></a
+            >
+            <a href="cms/about_us.html" id="submenu-list">
+              <span class="highlight">
+                About Us
+              </span></a
+            >
+            <a href="cms/why_us.html" id="submenu-list">
+              <span class="highlight">
+                Why Us
+              </span></a
+            >
+            <a href="cms/our_services.html" id="submenu-list">
+              <span class="highlight">
+                Our Services
+              </span></a
+            >
+            <a href="cms/contact_us.html" id="submenu-list">
+              <span class="highlight">
+                Contact Us
+              </span></a
+            >
+          </div>
+        </li>
+        <!-- SETTINGS  -->
+        <li>
+          <a
+            href="#settingsSubmenu"
+            data-target="#settingsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-cog"></i>
+              <span> Settings</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="settingsSubmenu">
+            <a href="cms_homepage.html" id="submenu-list">
+              <span class="highlight"> Add Roles</span></a
+            >
+            <a href="cms_about_us.html" id="submenu-list">
+              <span class="highlight">
+                Permission
+              </span></a
+            >
+            <a href="cms_why_us.html" id="submenu-list">
+              <span class="highlight">
+                Position
+              </span></a
+            >
+            <a href="cms_our_services.html" id="submenu-list">
+              <span class="highlight">
+                Department
+              </span></a
+            >
+          </div>
+        </li>
       </ul>
     </div>
     <!-- MAIN CONTENT  -->
@@ -171,25 +259,16 @@
                 placeholder="Search user..."
               />
             </div>
+            <!-- FILTER  -->
+            <div class="col-1 filter-icon">
+              <i class="fas fa-filter"></i>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="#"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Perform Action
-                </div>
-              </div>
-            </button></a
-          >
-        </div>
-      </div>
+
       <!-- MEMBERS LIST  -->
-      <div class="row col-12">
+      <div class="row col-12 mt-5">
         <div class="user-list mx-5 my-3">
           <table class="table">
             <thead class="thead">

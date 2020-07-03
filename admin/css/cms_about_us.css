@@ -1,15 +1,19 @@
 .form-title {
   color: #e27115;
-  padding-top: 1rem;
+  width: fit-content;
   padding-left: 1.5rem;
   font-weight: 600;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  transform: translateY(-10px); }
+
+.back-button {
+  font-weight: 400; }
 
 .title-underline {
   margin-top: 0rem;
   border: 2px solid #e27115;
   width: 100px;
-  margin-left: 1.5rem;
+  margin-left: 0;
   transition: 0.2s width ease-out; }
 
 .form-card {
@@ -17,51 +21,13 @@
   border: 1px solid #fc8931;
   border-radius: 2rem; }
 
-.form-label {
-  padding-left: 0.75rem;
-  pointer-events: none; }
-
-.input-field {
-  padding-bottom: 1rem; }
-
-.form-group {
-  position: relative; }
-
-.form-inline .form-control {
-  width: 100%;
-  border-radius: 15px; }
-
-.form-label {
-  position: absolute;
-  height: 100%; }
-
-.content-name {
-  color: #727272;
-  transition: 0.2s ease-out; }
-
-.form-control:focus + .form-label .content-name,
-input:valid + .form-label .content-name {
-  opacity: 100%;
-  transform: translateY(-2rem);
-  font-size: 0.9rem;
-  color: #727272; }
-
-.upload-section {
-  color: #e27115;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  box-shadow: 3px 3px 3px 2px #f7f7f7;
-  transition: 0.1s transform ease-out; }
-  .upload-section:hover {
-    transform: translateY(-0.2rem); }
-
-.save-btn {
-  border-radius: 1rem;
-  background-color: #e27115;
-  color: white;
-  transition: background-color 0.2s ease-out; }
-  .save-btn:hover {
-    background-color: #fc8931; }
+.edit-icon {
+  transform: translateY(30px); }
+  .edit-icon .icon-circle {
+    background-color: #e2884a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%; }
+    .edit-icon .icon-circle:hover {
+      cursor: pointer;
+      background-color: #fc8931; }

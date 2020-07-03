@@ -1,0 +1,11 @@
+.interview-container .interview-action {
+  opacity: 75%;
+  transition: 0.2s opacity ease-out; }
+
+.interview-container:hover .interview-action {
+  opacity: 100%; }
+
+.interview-container .icon-container {
+  cursor: pointer; }
+  .interview-container .icon-container:hover {
+    color: #e27115; }

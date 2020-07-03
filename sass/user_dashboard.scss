@@ -24,6 +24,10 @@ body {
   }
 }
 .user-training-info {
+  a {
+    text-decoration: none;
+  }
+  cursor: pointer;
   background-color: $color-grey-light;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -52,6 +56,37 @@ body {
     .title-2 {
       padding-left: 0.5rem;
     }
+  }
+  .view-details {
+    height: 1rem;
+    opacity: 0;
+    margin-bottom: 1rem;
+
+    transition: 0.1s ease-out;
+    &:hover #view-details-hr {
+      width: 20%;
+      border: 1px solid $color-primary-muted;
+    }
+    #view-details-hr {
+      width: 0%;
+      transform: translateY(-1rem);
+      transition: 0.2s width ease-out;
+    }
+  }
+  #ann-hr {
+    width: 90%;
+  }
+  &:hover .view-details {
+    height: 1rem;
+
+    opacity: 100%;
+    color: $color-primary;
+  }
+
+  #view-details-hr {
+    width: 0%;
+    transform: translateY(-1rem);
+    transition: 0.2s width ease-out;
   }
 }
 

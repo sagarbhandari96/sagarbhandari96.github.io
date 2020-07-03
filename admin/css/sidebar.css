@@ -7,8 +7,17 @@ body {
   top: 0;
   left: 0;
   width: 250px;
-  height: 110vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  height: 100vh;
   white-space: nowrap; }
+  .sidebar::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0; }
   .sidebar .lbp-logo .logo-svg {
     cursor: pointer;
     background-color: #f3f3f3;

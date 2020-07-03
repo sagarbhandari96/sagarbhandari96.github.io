@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update Training Details</title>
+    <title>CMS.Why Us</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/sidebar.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/cms_about_us.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Update Training Details</div>
+        <div class="nav-current-page">Content Management System</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -64,8 +64,8 @@
 
       <ul class="list-unstyled sidebar-components">
         <!-- DASHBOARD  -->
-        <a href="dashboard.html">
-          <li>
+        <a href="../dashboard.html">
+          <li >
             <span class="highlight">
               <i class="fas fa-tachometer-alt"></i>
               <span> Dashboard</span>
@@ -74,7 +74,7 @@
         </a>
 
         <!-- ADMIN USER  -->
-        <a href="create-user.html">
+        <a href="../create-user.html">
           <li>
             <span class="highlight">
               <i class="fas fa-user-plus"></i>
@@ -83,7 +83,7 @@
           </li>
         </a>
         <!-- MEMBERS LIST  -->
-        <li>
+        <li >
           <a
             href="#memberSubmenu"
             data-toggle="collapse"
@@ -95,22 +95,22 @@
             </span>
           </a>
           <div class="collapse submenu" id="memberSubmenu">
-            <a href="registered-members.html" id="submenu-list">
+            <a href="../registered-members.html" id="submenu-list">
               <span class="highlight">
                 <i class="far fa-calendar-check"></i> Registered Members</span
               ></a
             >
-            <a href="approved-members.html" id="submenu-list">
+            <a href="../approved-members.html" id="submenu-list">
               <span class="highlight">
                 <i class="far fa-check-circle"></i> Approved Members</span
               ></a
             >
-            <a href="declined-members.html" id="submenu-list">
+            <a href="../declined-members.html" id="submenu-list">
               <span class="highlight">
                 <i class="fas fa-ban"></i> Declined Members</span
               ></a
             >
-            <a href="on-hold.html" id="submenu-list">
+            <a href="../on-hold.html" id="submenu-list">
               <span class="highlight">
                 <i class="far fa-hand-paper"></i> On-hold Members</span
               ></a
@@ -130,12 +130,12 @@
             </span>
           </a>
           <div class="collapse submenu" id="userDetailsSubmenu">
-            <a href="view-edit.html" id="submenu-list">
+            <a href="../view-edit.html" id="submenu-list">
               <span class="highlight">
                 <i class="far fa-edit"></i> Update User Info</span
               ></a
             >
-            <a href="user-relocation.html" id="submenu-list">
+            <a href="../user-relocation.html" id="submenu-list">
               <span class="highlight">
                 <i class="fas fa-map-marked-alt"></i> User Relocation
               </span></a
@@ -144,7 +144,7 @@
         </li>
 
         <!-- TRAINING  -->
-        <li class="active-page-members">
+        <li>
           <a
             href="#trainingSubmenu"
             data-target="#trainingSubmenu"
@@ -156,12 +156,12 @@
             </span>
           </a>
           <div class="collapse submenu" id="trainingSubmenu">
-            <a href="update-training.html" id="submenu-list">
-              <span class="highlight-active">
+            <a href="../update-training.html" id="submenu-list">
+              <span class="highlight">
                 <i class="fas fa-plus"></i> Add Training Details</span
               ></a
             >
-            <a href="completed-training.html" id="submenu-list">
+            <a href="../completed-training.html" id="submenu-list">
               <span class="highlight">
                 <i class="fas fa-user-graduate"></i> Completed Trainee List
               </span></a
@@ -170,7 +170,7 @@
         </li>
 
         <!-- CONTENT MANAGEMENT SYSTEM  -->
-        <li>
+        <li class="active-page-members">
           <a
             href="#cmsSubmenu"
             data-target="#cmsSubmenu"
@@ -183,25 +183,25 @@
             </span>
           </a>
           <div class="collapse submenu" id="cmsSubmenu">
-            <a href="cms/homepage.html" id="submenu-list">
+            <a href="homepage.html" id="submenu-list">
               <span class="highlight"> Homepage</span></a
             >
-            <a href="cms/about_us.html" id="submenu-list">
+            <a href="about_us.html" id="submenu-list">
               <span class="highlight">
                 About Us
               </span></a
             >
-            <a href="cms/why_us.html" id="submenu-list">
-              <span class="highlight">
+            <a href="why_us.html" id="submenu-list">
+              <span class="highlight-active">
                 Why Us
               </span></a
             >
-            <a href="cms/our_services.html" id="submenu-list">
+            <a href="our_services.html" id="submenu-list">
               <span class="highlight">
                 Our Services
               </span></a
             >
-            <a href="cms/contact_us.html" id="submenu-list">
+            <a href="contact_us.html" id="submenu-list">
               <span class="highlight">
                 Contact Us
               </span></a
@@ -246,80 +246,34 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row col-12">
-        <div class="mx-5 perform-action">
-          <a class="" href="add-training.html"
-            ><button class="btn perform-action-btn">
-              <div class="d-flex">
-                <i class="fas fa-list my-1 mx-2"></i>
-                <div id="btn-text">
-                  Add new training
-                </div>
+      <div class="row col-10 ml-5 mt-5">
+          
+          <div class="col-8 form-card">
+            <span class="d-flex justify-content-end mr-3 edit-icon">
+              <a href="why_us_edit.html">
+              <span class="icon-circle" >
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </a>
+              
+            </span>
+              <div class="form-title">Why Us
+                <hr class="title-underline">
               </div>
-            </button></a
-          >
-        </div>
+              
+              
+              
+              
+             <p class="ml-5 mr-1 mt-2 about-us-text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quas ea cum molestiae, quo totam iure maiores? Recusandae magni cumque quia accusamus hic debitis laborum sed! Mollitia consequuntur illum voluptas sint minus facilis. Laudantium, aspernatur modi earum nulla accusamus consequuntur sint aut architecto alias quod ea dolore! Obcaecati rerum, perferendis quo nemo accusamus perspiciatis expedita similique quibusdam repellendus voluptatum dolor atque iusto quos qui consectetur. Eos libero recusandae harum assumenda quod dignissimos ipsa debitis vel reiciendis sunt ex enim, dolore architecto necessitatibus maxime quibusdam? Ullam, ipsa nulla ab sint ea incidunt quod hic temporibus mollitia, consequatur quibusdam cumque possimus quis!
+             </p>
+
+               
+          </div>
+          
       </div>
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Training Name</th>
-                <th scope="col">Type of training</th>
-                <th scope="col">Duration</th>
-                <th scope="col">Training Instructor</th>
-                <th scope="col">Time Slot</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='training-details.html';"
-              >
-                <a href="training-details.html">
-                  <th scope="row">1</th>
-                  <td>Lorem, ipsum.</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>1 Year</td>
-                  <td>Kevin James</td>
-                  <td>9-12 PM</td>
-                </a>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='training-details.html';"
-              >
-                <a href="training-details.html">
-                  <th scope="row">1</th>
-                  <td>Lorem, ipsum.</td>
-                  <td>Lorem, ipsum dolor.</td>
-                  <td>1 Year</td>
-                  <td>Kevin James</td>
-                  <td>9-12 PM</td>
-                </a>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+     
+
       </div>
     </div>
 

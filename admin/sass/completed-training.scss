@@ -41,6 +41,11 @@ tr th {
     }
   }
 }
+.filter-icon {
+  padding-top: 0.5rem;
+  color: $grey-text;
+  cursor: pointer;
+}
 
 .perform-action {
   margin-top: 2rem;
