@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>User Profile</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/completed-training.css" />
+    <link rel="stylesheet" href="css/trainee-interview-approval.css" />
+    <link rel="stylesheet" href="css/user-profile.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -23,7 +24,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Declined Members</div>
+        <div class="nav-current-page">User Profile</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -83,7 +84,7 @@
           </li>
         </a>
         <!-- MEMBERS LIST  -->
-        <li class="active-page-members">
+        <li>
           <a
             href="#memberSubmenu"
             data-toggle="collapse"
@@ -106,7 +107,7 @@
               ></a
             >
             <a href="declined-members.html" id="submenu-list">
-              <span class="highlight-active">
+              <span class="highlight">
                 <i class="fas fa-ban"></i> Declined Members</span
               ></a
             >
@@ -144,7 +145,7 @@
         </li>
 
         <!-- TRAINING  -->
-        <li>
+        <li class="active-page-members">
           <a
             href="#trainingSubmenu"
             data-target="#trainingSubmenu"
@@ -162,7 +163,7 @@
               ></a
             >
             <a href="review-application.html" id="submenu-list">
-              <span class="highlight">
+              <span class="highlight-active">
                 <i class="far fa-check-circle"></i> Review Applications</span
               ></a
             >
@@ -256,80 +257,219 @@
     </div>
     <!-- MAIN CONTENT  -->
     <div class="main-content">
-      <div class="row col-12 justify-content-center">
-        <div class="col-10 searchbar">
-          <div class="d-flex">
-            <div class="search-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <div class="col-11">
-              <input
-                type="text"
-                class="search-text"
-                placeholder="Search user..."
-              />
-            </div>
-            <!-- FILTER  -->
-            <div class="col-1 filter-icon">
-              <i class="fas fa-filter"></i>
+      <div class="row col-12">
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-10">
+              <div class="card text-center" id="card-section">
+                <div
+                  class="d-flex container text-left px-5 py-3 flex-row profile-block"
+                >
+                  <div>
+                    <img
+                      src="../img/profile_pic.png"
+                      class="profile-pic"
+                      height="100px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="profile-desc mx-3">
+                    <div class="user-name">
+                      John Doe
+                    </div>
+                    <div class="user-detail-block">
+                      Address:
+                      <span class="user-block-desc">Bhaktapur</span>
+                    </div>
+                    <div class="user-detail-block">
+                      Contact:
+                      <span class="user-block-desc">9876543210</span>
+                    </div>
+                    <div class="user-detail-block">
+                      DOB:
+                      <span class="user-block-desc"
+                        >1992/1/2 <span id="ad-date">A.D.</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body justify-content-center">
+                  <!-- Training details -->
+                  <div id="detail-sections-container">
+                    <div id="bio-title" class="my-1 text-left">
+                      Training Details
+                    </div>
+                    <div id="user-detail-container" class="ml-3">
+                      <div class="d-flex mt-2">
+                        <div class="col-4 text-left" id="info-title">
+                          Training
+                        </div>
+                        <div>Lorem, ipsum.</div>
+                      </div>
+                      <div class="d-flex mt-2">
+                        <div class="col-4 text-left" id="info-title">
+                          Duration
+                        </div>
+                        <div>
+                          1 Year
+                        </div>
+                      </div>
+                      <div class="d-flex mt-2">
+                        <div class="col-4 text-left" id="info-title">
+                          Timing Slot
+                        </div>
+                        <div>
+                          9-12
+                        </div>
+                      </div>
+                      <div class="d-flex mt-2">
+                        <div class="col-4 text-left" id="info-title">
+                          Instructor
+                        </div>
+                        <div>
+                          Kevin James
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="section-divider" />
+
+                  <!-- Address -->
+                  <div id="detail-sections-container">
+                    <div id="bio-title" class="my-1 text-left">
+                      Additional Information
+                    </div>
+                    <div id="user-detail-container">
+                      <div class="d-flex my-3">
+                        <div class="mx-3 col-4" id="info-title">
+                          Reasons for applying
+                        </div>
+                        <div class="text-left">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sapiente tempora molestiae enim, officia unde
+                          inventore aperiam voluptatum saepe voluptatibus nihil
+                          et iure reprehenderit ipsum rem nam temporibus
+                          consequatur esse facilis.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="section-divider" />
+
+                  <!-- CV -->
+                  <div id="detail-sections-container">
+                    <div id="bio-title" class="my-1 text-left">
+                      Attached document
+                    </div>
+                    <div id="user-detail-container">
+                      <div
+                        class="d-flex flex-column upload-section col-4 px-3 my-3 mx-auto"
+                      >
+                        <div class="upload-icon">
+                          <i class="fas fa-eye fa-2x"></i>
+                        </div>
+                        View document
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="section-divider" />
+                  <!-- BUTTONS  -->
+                  <div class="row col-12 my-5">
+                    <div class="col-5">
+                      <div class="mr-auto mx-5">
+                        <button
+                          class="btn action-buttons accept"
+                          data-toggle="modal"
+                          data-target="#approveModal"
+                        >
+                          <div id="btn-text">
+                            <i class="far fa-check-circle"></i>
+                            Approve
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="mr-auto mx-5">
+                        <button
+                          class="btn action-buttons decline"
+                          data-toggle="modal"
+                          data-target="#rejectionModal"
+                        >
+                          <div id="btn-text">
+                            <i class="far fa-times-circle"></i>
+                            Decline
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- MEMBERS LIST  -->
-      <div class="row col-12 mt-5">
-        <div class="user-list mx-5 my-3">
-          <table class="table">
-            <thead class="thead">
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
+    <!-- Decline MODAL -->
+    <div class="modal fade text-dark" id="rejectionModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Decline</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="message">Reason for rejection</label>
+                <textarea
+                  class="form-control modal-textarea"
+                  rows="8"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn action-buttons accept">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <th scope="col">Preferred location</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-
-                  <td>Kathmandu</td>
-                </a>
-              </tr>
-
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-
-                <td>Kathmandu</td>
-              </tr>
-            </tbody>
-          </table>
+    <!--Approve MODAL -->
+    <div class="modal fade text-dark" id="approveModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Approve Applicant</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Set Interview Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">Set Interview Time</label>
+                <input type="time" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="message">Set Interview Location</label>
+                <input type="text" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn action-buttons accept">Confirm</button>
+          </div>
         </div>
       </div>
     </div>

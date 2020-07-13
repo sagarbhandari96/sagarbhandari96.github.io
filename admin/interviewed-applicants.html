@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>Interviewed Applicants</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Declined Members</div>
+        <div class="nav-current-page">Interviewed Applicants</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -83,7 +83,7 @@
           </li>
         </a>
         <!-- MEMBERS LIST  -->
-        <li class="active-page-members">
+        <li>
           <a
             href="#memberSubmenu"
             data-toggle="collapse"
@@ -106,7 +106,7 @@
               ></a
             >
             <a href="declined-members.html" id="submenu-list">
-              <span class="highlight-active">
+              <span class="highlight">
                 <i class="fas fa-ban"></i> Declined Members</span
               ></a
             >
@@ -144,7 +144,7 @@
         </li>
 
         <!-- TRAINING  -->
-        <li>
+        <li class="active-page-members">
           <a
             href="#trainingSubmenu"
             data-target="#trainingSubmenu"
@@ -167,7 +167,7 @@
               ></a
             >
             <a href="interviewed-applicants.html" id="submenu-list">
-              <span class="highlight">
+              <span class="highlight-active">
                 <i class="fas fa-users"></i> Interviewed Applicants</span
               ></a
             >
@@ -294,7 +294,7 @@
             <tbody>
               <tr
                 class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
+                onclick="window.location='interviewed-applicant-detail.html';"
               >
                 <a href="user_profile_admin_view.html">
                   <th scope="row">1</th>
@@ -308,7 +308,7 @@
 
               <tr
                 class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
+                onclick="window.location='interviewed-applicant-detail.html';"
               >
                 <th scope="row">2</th>
                 <td>Jon Doe</td>
@@ -319,7 +319,7 @@
               </tr>
               <tr
                 class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
+                onclick="window.location='interviewed-applicant-detail.html';"
               >
                 <th scope="row">3</th>
                 <td>Jon Doe</td>

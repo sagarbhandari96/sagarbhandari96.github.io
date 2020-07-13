@@ -1,0 +1,13 @@
+@import "color_scheme";
+
+.btn-apply {
+  border-radius: 1rem;
+  background-color: $color-light;
+  color: white;
+  width: fit-content;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  &:hover {
+    background-color: $color-primary;
+  }
+}

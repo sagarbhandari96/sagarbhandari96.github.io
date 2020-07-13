@@ -1,0 +1,14 @@
+@import "../../sass/color_scheme";
+.upload-section {
+  color: $color-primary;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid $color-grey-dark;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 2px $color-grey-light;
+  transition: 0.1s transform ease-out;
+}
+.upload-section:hover {
+  transform: translateY(-0.2rem);
+}
