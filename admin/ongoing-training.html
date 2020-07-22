@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin|Dashboard</title>
+    <title>Ongoing Training</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand navbar-dark bg-transparent">
       <div class="container">
-        <div class="nav-current-page">Registered Members</div>
+        <div class="nav-current-page">Ongoing Training</div>
         <ul class="navbar-nav ml-auto my-3 mx-5">
           <li class="nav-item notif-icon px-4">
             <i class="far fa-bell"></i>
@@ -83,7 +83,7 @@
           </li>
         </a>
         <!-- MEMBERS LIST  -->
-        <li class="active-page-members">
+        <li>
           <a
             href="#memberSubmenu"
             data-toggle="collapse"
@@ -94,9 +94,9 @@
               <i class="fas fa-list"></i> <span> Members list</span>
             </span>
           </a>
-          <div class="expand submenu" id="memberSubmenu">
+          <div class="collapse submenu" id="memberSubmenu">
             <a href="registered-members.html" id="submenu-list">
-              <span class="highlight-active">
+              <span class="highlight">
                 <i class="far fa-calendar-check"></i> Registered Members</span
               ></a
             >
@@ -144,7 +144,7 @@
         </li>
 
         <!-- TRAINING  -->
-        <li>
+        <li class="active-page-members">
           <a
             href="#trainingSubmenu"
             data-target="#trainingSubmenu"
@@ -155,7 +155,7 @@
               <i class="fas fa-graduation-cap"></i> <span> Training</span>
             </span>
           </a>
-          <div class="collapse submenu" id="trainingSubmenu">
+          <div class="expand submenu" id="trainingSubmenu">
             <a href="update-training.html" id="submenu-list">
               <span class="highlight">
                 <i class="fas fa-plus"></i> Add Training Details</span
@@ -172,7 +172,7 @@
               ></a
             >
             <a href="ongoing-training.html" id="submenu-list">
-              <span class="highlight">
+              <span class="highlight-active">
                 <i class="fas fa-users"></i> Ongoing Training</span
               ></a
             >
@@ -271,7 +271,7 @@
               <input
                 type="text"
                 class="search-text"
-                placeholder="Search user..."
+                placeholder="Search group..."
               />
             </div>
             <!-- FILTER  -->
@@ -281,64 +281,120 @@
           </div>
         </div>
       </div>
-
+      <div class="row col-12 mt-3">
+        <div class="mx-5 perform-action">
+          <button
+            class="btn perform-action-btn"
+            data-toggle="modal"
+            data-target="#addGroupModal"
+          >
+            <div class="d-flex">
+              <i class="fas fa-plus mt-1 mr-2"></i>
+              <div id="btn-text">
+                Add new group
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
       <!-- MEMBERS LIST  -->
-      <div class="row col-12 mt-5">
+      <div class="row col-12 mt-1">
         <div class="user-list mx-5 my-3">
           <table class="table">
             <thead class="thead">
               <tr>
                 <th scope="col">S.No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mobile No.</th>
-                <th scope="col">Gender</th>
-
-                <th scope="col">Preferred location</th>
+                <th scope="col">Group Name</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Time Slot</th>
+                <th scope="col">Instructor</th>
               </tr>
             </thead>
             <tbody>
               <tr
                 class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
+                onclick="window.location='training-group-details.html';"
               >
-                <a href="user_profile_admin_view.html">
-                  <th scope="row">1</th>
-                  <td>Jon Doe</td>
-                  <td>9876543210</td>
-                  <td>Male</td>
-
-                  <td>Kathmandu</td>
-                </a>
+                <th scope="row">1</th>
+                <td>Lorem ipsum</td>
+                <td>2020/3/2</td>
+                <td>2021/3/2</td>
+                <td>9-12</td>
+                <td>George S.</td>
               </tr>
-
               <tr
                 class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
+                onclick="window.location='training-group-details.html';"
               >
                 <th scope="row">2</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-
-                <td>Kathmandu</td>
-              </tr>
-              <tr
-                class="list-entry"
-                onclick="window.location='user_profile_admin_view.html';"
-              >
-                <th scope="row">3</th>
-                <td>Jon Doe</td>
-                <td>9876543210</td>
-                <td>Male</td>
-
-                <td>Kathmandu</td>
+                <td>Lorem ipsum</td>
+                <td>2020/3/2</td>
+                <td>2021/3/2</td>
+                <td>9-12</td>
+                <td>George S.</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
+    <!--Add group MODAL -->
+    <div class="modal fade text-dark" id="addGroupModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add new training group</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Group Name</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="name">Type of Training</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="name">Start Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="name">End Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="name">Time Slot</label>
+                <select class="form-control" id="time-slot">
+                  <option selected="">Select...</option>
+                  <option value="male">9-12</option>
+                  <option value="female">12-3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Instructor</label>
+                <input type="text" class="form-control" />
+              </div>
 
+              <div class="form-group">
+                <label for="message">Group Details</label>
+                <textarea
+                  class="form-control modal-textarea"
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn action-buttons accept">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
