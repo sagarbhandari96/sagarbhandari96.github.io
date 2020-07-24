@@ -1,0 +1,96 @@
+@import "../../sass/color_scheme";
+@mixin icon-button {
+  background-color: $color-light;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-form-primary;
+  }
+}
+@mixin title-underline {
+  margin-top: 0rem;
+  border: 2px solid #e27115;
+  width: 100px;
+  margin-left: 0;
+  transition: 0.2s width ease-out;
+}
+.form-title {
+  color: $color-primary;
+  width: fit-content;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transform: translateY(-10px);
+}
+.back-button {
+  font-weight: 400;
+}
+
+.title-underline {
+  @include title-underline();
+  width: 60px;
+}
+
+.title-underline-permission {
+  @include title-underline();
+  width: 170px;
+}
+.form-card {
+  background-color: white;
+  border: 1px solid $color-form-primary;
+  border-radius: 2rem;
+}
+.edit-icon {
+  transform: translateY(30px);
+
+  .icon-circle {
+    @include icon-button();
+  }
+}
+
+.action-icon {
+  @include icon-button();
+  background-color: $grey-text;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+}
+.delete {
+  @include icon-button();
+  background-color: $color-light;
+  font-size: 0.8rem;
+  padding: 5px 8px;
+  &:hover {
+    background-color: #ee5050;
+  }
+}
+#separator {
+  height: 2px;
+  background-color: $grey-text-dark;
+  width: 90%;
+  opacity: 20%;
+  transform: translateY(-10px);
+}
+#field-separator {
+  background-color: $grey-text;
+  opacity: 20%;
+  width: 90%;
+}
+
+.modal-accept {
+  background-color: #00a71c;
+  color: white;
+  padding: 5px 30px;
+  &:hover {
+    background-color: #02cc24;
+  }
+}
+.modal-reject {
+  background-color: #ee5050;
+  color: white;
+  padding: 5px 30px;
+  &:hover {
+    background-color: #e92f2f;
+  }
+}

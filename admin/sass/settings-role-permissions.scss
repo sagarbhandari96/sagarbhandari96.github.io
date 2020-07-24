@@ -1,0 +1,119 @@
+@import "../../sass/color_scheme";
+
+.form-title {
+  color: $color-primary;
+  width: fit-content;
+  padding-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transform: translateY(-10px);
+  .back-button {
+    color: $color-light;
+    padding: 0px 10px;
+    // transform: translateY(-10px);
+
+    &:hover {
+      background-color: rgba($color: $grey-text, $alpha: 0.3);
+      border-radius: 50%;
+      color: $color-form-primary;
+    }
+  }
+}
+
+.title-underline {
+  margin-top: 0rem;
+  border: 2px solid #e27115;
+  width: 150px;
+  margin-left: 0;
+  transition: 0.2s width ease-out;
+}
+.form-card {
+  background-color: white;
+  border: 1px solid $color-form-primary;
+  border-radius: 2rem;
+}
+.edit-icon {
+  transform: translateY(30px);
+
+  .icon-circle {
+    background-color: $color-light;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-form-primary;
+    }
+  }
+}
+
+.form-label {
+  padding-left: 0.75rem;
+  pointer-events: none;
+}
+
+.input-field {
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  position: relative;
+}
+.form-inline .form-control {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.form-label {
+  position: absolute;
+  height: 100%;
+}
+
+.content-name {
+  color: #727272;
+
+  transition: 0.2s ease-out;
+}
+
+.form-control:focus + .form-label .content-name,
+input:valid + .form-label .content-name {
+  opacity: 100%;
+  transform: translateY(-2rem);
+  font-size: 0.9rem;
+  color: #727272;
+}
+
+.upload-section {
+  color: $color-primary;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 2px #f7f7f7;
+  transition: 0.1s transform ease-out;
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.save-btn {
+  border-radius: 1rem;
+  background-color: $color-primary;
+  color: white;
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: $color-form-primary;
+  }
+}
+
+.permission-list {
+  padding: 1rem;
+  background-color: #f3f3f3;
+  width: fit-content;
+  border-radius: 1rem;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.18);
+  .list-title {
+    font-weight: 600;
+  }
+}

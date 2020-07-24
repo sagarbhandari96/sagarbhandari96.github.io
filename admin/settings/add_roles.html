@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Roles</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/add-roles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand navbar-dark bg-transparent">
+      <div class="container">
+        <div class="nav-current-page">Add Roles</div>
+        <ul class="navbar-nav ml-auto my-3 mx-5">
+          <li class="nav-item notif-icon px-4">
+            <i class="far fa-bell"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              User Name
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Account settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- SIDEBAR  -->
+    <div class="sidebar">
+      <!-- LOGO  -->
+      <div class="text-center lbp-logo">
+        <img
+          src="/img/logo.svg"
+          class="logo-svg px-3 py-2"
+          height="65px"
+          alt=""
+        />
+      </div>
+
+      <ul class="list-unstyled sidebar-components">
+        <!-- DASHBOARD  -->
+        <a href="../dashboard.html">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-tachometer-alt"></i>
+              <span> Dashboard</span>
+            </span>
+          </li>
+        </a>
+
+        <!-- ADMIN USER  -->
+        <a href="../create-user.html">
+          <li>
+            <span class="highlight">
+              <i class="fas fa-user-plus"></i>
+              <span> Admin User</span>
+            </span>
+          </li>
+        </a>
+        <!-- MEMBERS LIST  -->
+        <li>
+          <a
+            href="#memberSubmenu"
+            data-toggle="collapse"
+            data-target="#memberSubmenu"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-list"></i> <span> Members list</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="memberSubmenu">
+            <a href="../registered-members.html" id="submenu-list">
+              <span class="highlight">
+                <i class="far fa-calendar-check"></i> Registered Members</span
+              ></a
+            >
+            <a href="../approved-members.html" id="submenu-list">
+              <span class="highlight">
+                <i class="far fa-check-circle"></i> Approved Members</span
+              ></a
+            >
+            <a href="../declined-members.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-ban"></i> Declined Members</span
+              ></a
+            >
+            <a href="../on-hold.html" id="submenu-list">
+              <span class="highlight">
+                <i class="far fa-hand-paper"></i> On-hold Members</span
+              ></a
+            >
+          </div>
+        </li>
+        <!-- USER DETAILS  -->
+        <li>
+          <a
+            href="#userDetailsSubmenu"
+            data-target="#userDetailsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-users"></i> <span> User Details</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="userDetailsSubmenu">
+            <a href="../view-edit.html" id="submenu-list">
+              <span class="highlight">
+                <i class="far fa-edit"></i> Update User Info</span
+              ></a
+            >
+            <a href="../user-relocation.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-map-marked-alt"></i> User Relocation
+              </span></a
+            >
+          </div>
+        </li>
+
+        <!-- TRAINING  -->
+        <li>
+          <a
+            href="#trainingSubmenu"
+            data-target="#trainingSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-graduation-cap"></i> <span> Training</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="trainingSubmenu">
+            <a href="../update-training.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-plus"></i> Add Training Details</span
+              ></a
+            >
+            <a href="../review-application.html" id="submenu-list">
+              <span class="highlight">
+                <i class="far fa-check-circle"></i> Review Applications</span
+              ></a
+            >
+            <a href="../interviewed-applicants.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-users"></i> Interviewed Applicants</span
+              ></a
+            >
+            <a href="../ongoing-training.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-users"></i> Ongoing Training</span
+              ></a
+            >
+            <a href="../completed-training.html" id="submenu-list">
+              <span class="highlight">
+                <i class="fas fa-user-graduate"></i> Completed Trainee List
+              </span></a
+            >
+          </div>
+        </li>
+
+        <!-- CONTENT MANAGEMENT SYSTEM  -->
+        <li>
+          <a
+            href="#cmsSubmenu"
+            data-target="#cmsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="far fa-file-alt"></i>
+              <span> Content Mangement</span>
+            </span>
+          </a>
+          <div class="collapse submenu" id="cmsSubmenu">
+            <a href="../cms/homepage.html" id="submenu-list">
+              <span class="highlight"> Homepage</span></a
+            >
+            <a href="../cms/about_us.html" id="submenu-list">
+              <span class="highlight">
+                About Us
+              </span></a
+            >
+            <a href="../cms/why_us.html" id="submenu-list">
+              <span class="highlight">
+                Why Us
+              </span></a
+            >
+            <a href="../cms/our_services.html" id="submenu-list">
+              <span class="highlight">
+                Our Services
+              </span></a
+            >
+            <a href="../cms/contact_us.html" id="submenu-list">
+              <span class="highlight">
+                Contact Us
+              </span></a
+            >
+          </div>
+        </li>
+        <!-- SETTINGS  -->
+        <li class="active-page-members">
+          <a
+            href="#settingsSubmenu"
+            data-target="#settingsSubmenu"
+            data-toggle="collapse"
+            id="accordion"
+          >
+            <span class="highlight">
+              <i class="fas fa-cog"></i>
+              <span> Settings</span>
+            </span>
+          </a>
+          <div class="expand submenu" id="settingsSubmenu">
+            <a href="add_roles.html" id="submenu-list">
+              <span class="highlight-active"> Add Roles</span></a
+            >
+            <a href="permission.html" id="submenu-list">
+              <span class="highlight">
+                Permission
+              </span></a
+            >
+            <a href="position.html" id="submenu-list">
+              <span class="highlight">
+                Position
+              </span></a
+            >
+            <a href="department.html" id="submenu-list">
+              <span class="highlight">
+                Department
+              </span></a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- MAIN CONTENT  -->
+    <div class="main-content">
+      <div class="row col-11 ml-5 mt-5">
+        <div class="col-6 form-card mr-3">
+          <span class="d-flex justify-content-end mr-3 edit-icon">
+            <a href="add-new-roles.html">
+              <span class="icon-circle">
+                <i class="fas fa-plus"></i>
+              </span>
+            </a>
+          </span>
+          <div class="form-title">
+            Roles
+            <hr class="title-underline" />
+          </div>
+
+          <div class="roles-table">
+            <div class="row">
+              <div class="col-5 description ml-5">Description</div>
+              <div class="col-1">
+                Action
+              </div>
+            </div>
+            <hr id="separator" />
+            <!-- FIELDS  -->
+            <div class="row">
+              <div class="col-5 description ml-5">Admin</div>
+              <div class="col-1">
+                <a href="add-new-roles.html">
+                  <span class="action-icon">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="#" data-toggle="modal" data-target="#deleteFieldModal">
+                  <span class="action-icon delete">
+                    <i class="far fa-trash-alt"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <hr id="field-separator" />
+            <div class="row">
+              <div class="col-5 description ml-5">Web Client</div>
+              <div class="col-1">
+                <a href="add-new-roles.html">
+                  <span class="action-icon">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="col-1">
+                <a href="#" data-toggle="modal" data-target="#deleteFieldModal">
+                  <span class="action-icon delete">
+                    <i class="far fa-trash-alt"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <hr id="field-separator" />
+          </div>
+        </div>
+
+        <!-- Add role Permission  -->
+        <div class="col-5 form-card">
+          <span class="d-flex justify-content-end mr-3 edit-icon">
+            <a href="add-role-permission.html">
+              <span class="icon-circle">
+                <i class="fas fa-plus"></i>
+              </span>
+            </a>
+          </span>
+          <div class="form-title">
+            Role Permission
+            <hr class="title-underline-permission" />
+          </div>
+          <form>
+            <div class="form-group col-10">
+              <label for="name">Select Role</label>
+              <select class="form-control" id="time-slot">
+                <option selected="" disabled>Select...</option>
+                <option value="male">Admin</option>
+                <option value="female">Web Client</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Delete field MODAL -->
+    <div class="modal fade text-dark" id="deleteFieldModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Are you sure you want to delete this role?
+            </h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn modal-accept">Yes</button>
+            <button class="btn modal-reject">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
